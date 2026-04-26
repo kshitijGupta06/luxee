@@ -1,0 +1,40 @@
+.page { display: flex; min-height: 100vh; margin-top: calc(var(--nav-height) * -1); padding-top: 0; }
+.sidebar { width: 240px; background: var(--color-gray-900); color: white; display: flex; flex-direction: column; flex-shrink: 0; padding-top: var(--nav-height); position: sticky; top: 0; height: 100vh; }
+.sidebarHeader { padding: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.adminLogo { font-family: var(--font-serif); font-size: 1.2rem; font-weight: 600; }
+.adminLogo span { color: var(--color-gold); font-weight: 400; }
+.sidebarNav { flex: 1; padding: 1rem 0; }
+.sidebarNav a { display: block; padding: 0.8rem 1.5rem; font-size: 0.88rem; color: var(--color-gray-400); transition: all var(--transition-fast); }
+.sidebarNav a:hover, .sidebarNav a.active { color: white; background: rgba(255,255,255,0.05); }
+.sidebarNav a.active { border-left: 3px solid var(--color-gold); }
+.logoutBtn { margin: 1rem; padding: 0.8rem; background: none; border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius-sm); color: var(--color-gray-400); cursor: pointer; font-size: 0.85rem; transition: all var(--transition-fast); }
+.logoutBtn:hover { border-color: var(--color-error); color: var(--color-error); }
+.main { flex: 1; padding: 2rem 3rem; padding-top: calc(var(--nav-height) + 2rem); background: var(--color-offwhite); min-height: 100vh; }
+.pageTitle { font-size: 1.8rem; margin-bottom: 2rem; }
+.statGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-bottom: 3rem; }
+.statCard { background: white; padding: 1.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); }
+.statLabel { display: block; font-size: 0.78rem; color: var(--color-gray-500); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+.statValue { font-size: 1.8rem; font-weight: 600; font-family: var(--font-serif); }
+.sectionTitle { font-size: 1.2rem; margin-bottom: 1.2rem; font-family: var(--font-sans); font-weight: 600; }
+.emptyText { color: var(--color-gray-400); padding: 2rem; text-align: center; }
+.table { background: white; border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm); }
+.tableHeader { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; padding: 1rem 1.5rem; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-gray-500); border-bottom: 1px solid var(--color-gray-100); }
+.tableRow { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; padding: 1rem 1.5rem; font-size: 0.88rem; border-bottom: 1px solid var(--color-gray-50); align-items: center; }
+.tableRow:last-child { border-bottom: none; }
+.bold { font-weight: 600; }
+.statusBadge { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; padding: 3px 10px; border-radius: 100px; display: inline-block; }
+.confirmed { background: rgba(74,124,89,0.1); color: var(--color-success); }
+.processing { background: rgba(212,160,60,0.1); color: var(--color-warning); }
+.shipped { background: rgba(201,169,110,0.1); color: var(--color-gold-dark); }
+.delivered { background: rgba(74,124,89,0.15); color: var(--color-success); }
+.productList { display: flex; flex-direction: column; gap: 1rem; }
+.productRow { display: flex; align-items: center; gap: 1rem; background: white; padding: 1rem 1.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); }
+.productRow img { width: 60px; height: 60px; border-radius: var(--radius-sm); object-fit: cover; }
+.productRow .productInfo { flex: 1; }
+.productRow .productInfo h4 { font-family: var(--font-sans); font-size: 0.92rem; font-weight: 500; }
+.productRow .productInfo p { font-size: 0.82rem; color: var(--color-gray-400); }
+.actions { display: flex; gap: 0.5rem; }
+.actionBtn { padding: 6px 14px; font-size: 0.78rem; border-radius: 4px; border: 1px solid var(--color-gray-200); background: white; cursor: pointer; transition: all var(--transition-fast); }
+.actionBtn:hover { border-color: var(--color-gold); color: var(--color-gold); }
+@media (max-width: 1024px) { .statGrid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 768px) { .sidebar { display: none; } .main { padding: 1rem; padding-top: calc(var(--nav-height) + 1rem); } .tableHeader, .tableRow { grid-template-columns: 1fr 1fr 1fr; } .tableHeader span:nth-child(2), .tableHeader span:nth-child(3), .tableRow span:nth-child(2), .tableRow span:nth-child(3) { display: none; } }

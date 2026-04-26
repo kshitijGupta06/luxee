@@ -1,0 +1,249 @@
+.page {
+  padding: 3rem 0 5rem;
+}
+
+.title {
+  margin-bottom: 2.5rem;
+}
+
+.empty {
+  text-align: center;
+  padding: 8rem 2rem;
+}
+
+.emptyIcon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.empty h2 {
+  margin-bottom: 0.5rem;
+}
+
+.empty p {
+  color: var(--color-gray-500);
+  margin-bottom: 2rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 3rem;
+  align-items: start;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--color-gray-100);
+  border-radius: var(--radius-md);
+  background: white;
+  transition: all var(--transition-base);
+}
+
+.item:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  border-color: rgba(201, 169, 110, 0.15);
+}
+
+.itemImage {
+  width: 120px;
+  height: 120px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.itemImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.itemInfo {
+  flex: 1;
+}
+
+.itemName {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--color-black);
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.itemName:hover {
+  color: var(--color-gold);
+}
+
+.customBadges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.customBadges span {
+  font-size: 0.72rem;
+  background: rgba(201, 169, 110, 0.1);
+  color: var(--color-gray-600);
+  padding: 2px 8px;
+  border-radius: 3px;
+  border: 1px solid rgba(201, 169, 110, 0.15);
+}
+
+.itemPrice {
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.itemActions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.qty {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.qty button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all var(--transition-fast);
+}
+
+.qty button:hover {
+  background: rgba(201, 169, 110, 0.08);
+}
+
+.qty span {
+  width: 32px;
+  text-align: center;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.remove {
+  font-size: 0.82rem;
+  color: var(--color-gray-400);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.remove:hover {
+  color: var(--color-error);
+}
+
+.lineTotal {
+  font-weight: 600;
+  font-size: 1rem;
+  white-space: nowrap;
+  margin-left: auto;
+  align-self: center;
+}
+
+/* Frosted glass order summary */
+.summary {
+  position: sticky;
+  top: calc(var(--nav-height) + 2rem);
+  background: rgba(248, 246, 241, 0.6);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  border: 1px solid rgba(201, 169, 110, 0.12);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+}
+
+.summary h3 {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.92rem;
+  padding: 0.5rem 0;
+  color: var(--color-gray-600);
+}
+
+.freeShipNote {
+  font-size: 0.78rem;
+  color: var(--color-gold);
+  margin: 0.3rem 0;
+}
+
+.totalRow {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--color-black);
+  border-top: 1px solid var(--color-gray-200);
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.continueLink {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--color-gray-500);
+}
+
+.continueLink:hover {
+  color: var(--color-gold);
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .item {
+    flex-direction: column;
+  }
+
+  .itemImage {
+    width: 100%;
+    height: 200px;
+  }
+
+  .lineTotal {
+    margin-left: 0;
+    align-self: flex-start;
+  }
+
+  .summary {
+    position: static;
+  }
+}

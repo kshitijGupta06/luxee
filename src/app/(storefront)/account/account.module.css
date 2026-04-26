@@ -1,0 +1,28 @@
+.page { padding: 3rem 0 5rem; }
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; }
+.email { color: var(--color-gray-400); font-size: 0.88rem; }
+.tabs { display: flex; gap: 0; border-bottom: 1px solid var(--color-gray-200); margin-bottom: 2rem; }
+.tabs button { padding: 0.8rem 1.5rem; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; background: none; border: none; color: var(--color-gray-400); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; transition: all var(--transition-fast); }
+.tabs button.activeTab { color: var(--color-black); border-bottom-color: var(--color-gold); }
+.empty { text-align: center; padding: 4rem 2rem; color: var(--color-gray-400); }
+.empty p { margin-bottom: 1.5rem; }
+.ordersList { display: flex; flex-direction: column; gap: 1.5rem; }
+.orderCard { border: 1px solid var(--color-gray-100); border-radius: var(--radius-md); overflow: hidden; background: white; }
+.orderHeader { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; background: var(--color-offwhite); }
+.orderId { font-weight: 600; margin-right: 1rem; }
+.orderDate { font-size: 0.82rem; color: var(--color-gray-400); }
+.status { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 12px; border-radius: 100px; }
+.confirmed { background: rgba(74,124,89,0.1); color: var(--color-success); }
+.processing { background: rgba(212,160,60,0.1); color: var(--color-warning); }
+.shipped { background: rgba(201,169,110,0.1); color: var(--color-gold-dark); }
+.delivered { background: rgba(74,124,89,0.15); color: var(--color-success); }
+.orderItems { padding: 1rem 1.5rem; display: flex; flex-direction: column; gap: 0.8rem; }
+.orderItem { display: flex; gap: 1rem; align-items: center; }
+.orderItem img { width: 50px; height: 50px; border-radius: var(--radius-sm); object-fit: cover; }
+.orderItem p { font-size: 0.9rem; }
+.orderItemMeta { font-size: 0.78rem; color: var(--color-gray-400); }
+.orderFooter { padding: 1rem 1.5rem; border-top: 1px solid var(--color-gray-100); text-align: right; font-weight: 600; }
+.profileCard { background: var(--color-offwhite); border-radius: var(--radius-md); padding: 2rem; max-width: 500px; }
+.profileRow { display: flex; justify-content: space-between; padding: 0.8rem 0; border-bottom: 1px solid var(--color-gray-200); font-size: 0.92rem; }
+.profileRow span:first-child { color: var(--color-gray-500); }
+.profileRow:last-child { border-bottom: none; }

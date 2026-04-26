@@ -1,0 +1,180 @@
+.page { }
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem 4rem;
+  background: var(--color-offwhite);
+}
+
+.tag {
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  margin-bottom: 1rem;
+}
+
+.heroDesc {
+  color: var(--color-gray-500);
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.story {
+  background: white;
+}
+
+.storyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.storyContent h2 {
+  margin-bottom: 1.5rem;
+}
+
+.storyContent p {
+  color: var(--color-gray-500);
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+  font-weight: 300;
+}
+
+.storyImage {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  position: relative;
+}
+
+/* Glass shine on story image */
+.storyImage::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 45%,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0.1) 55%,
+    transparent 100%
+  );
+  transform: translateX(-100%) rotate(25deg);
+  z-index: 2;
+  pointer-events: none;
+  animation: glassShineAuto 6s ease-in-out infinite 2s;
+}
+
+@keyframes glassShineAuto {
+  0%, 85%, 100% { transform: translateX(-100%) rotate(25deg); }
+  50% { transform: translateX(300%) rotate(25deg); }
+}
+
+.storyImage img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+}
+
+.values {
+  background: var(--color-offwhite);
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Frosted glass value cards */
+.valueCard {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  transition: all var(--transition-base);
+}
+
+.valueCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), 0 0 20px rgba(201, 169, 110, 0.08);
+  border-color: rgba(201, 169, 110, 0.2);
+}
+
+.valueIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 1rem;
+  font-size: 1.5rem;
+  color: var(--color-gold);
+  background: rgba(201, 169, 110, 0.1);
+  border: 1px solid rgba(201, 169, 110, 0.2);
+  border-radius: 50%;
+  transition: all var(--transition-base);
+}
+
+.valueCard:hover .valueIcon {
+  box-shadow: 0 0 20px rgba(201, 169, 110, 0.2);
+  background: rgba(201, 169, 110, 0.15);
+}
+
+.valueCard h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.valueCard p {
+  color: var(--color-gray-500);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.cta {
+  background: white;
+  position: relative;
+}
+
+/* Subtle radial gold glow behind CTA */
+.cta::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(201, 169, 110, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .storyGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+}
