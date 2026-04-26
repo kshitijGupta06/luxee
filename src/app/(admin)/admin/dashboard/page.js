@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { isAdminLoggedIn, adminLogout, getCustomOrders } from '@/frontend/lib/store';
 import { products, formatPrice } from '@/frontend/data/products';
-import styles from './admin.module.css';
+import styles from '../admin.module.css';
 
 export default function AdminDashboard() {
   const [mounted, setMounted] = useState(false);
