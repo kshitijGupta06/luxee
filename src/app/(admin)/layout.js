@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/next';
 export const metadata = {
   title: 'Emkay Home Admin',
   description: 'Admin Dashboard for Emkay Home',
