@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { isAdminLoggedIn, adminLogin } from '@/frontend/lib/store';
-import styles from '../login/auth.module.css';
+import styles from '../../login/auth.module.css';
 
 export default function AdminLoginPage() {
   const [email, setEmail] = useState('');
@@ -33,7 +33,7 @@ export default function AdminLoginPage() {
         <form onSubmit={handleSubmit}>
           <div className={styles.field}><label>Email</label><input type="email" required value={email} onChange={e => setEmail(e.target.value)} placeholder="admin@emkayhome.in" /></div>
           <div className={styles.field}><label>Password</label><input type="password" required value={password} onChange={e => setPassword(e.target.value)} placeholder="••••••••" /></div>
-          <button type="submit" className="btn btn-primary btn-lg" style={{width:'100%'}}>Sign In</button>
+          <button type="submit" className="btn btn-primary btn-lg" style={{ width: '100%' }}>Sign In</button>
         </form>
       </div>
     </div>
