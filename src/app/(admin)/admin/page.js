@@ -2,7 +2,8 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { isAdminLoggedIn, adminLogin } from '@/frontend/lib/store';
-import styles from '../../login/auth.module.css';
+import styles from '@/app/(storefront)/login/auth.module.css';
+
 
 export default function AdminLoginPage() {
   const [email, setEmail] = useState('');
