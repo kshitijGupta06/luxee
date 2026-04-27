@@ -1,13 +1,17 @@
 'use client';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { createCustomOrder } from '@/frontend/lib/store';
 import { showToast } from '@/frontend/components/ToastProvider';
 import { categories } from '@/frontend/data/products';
+import DrawingCanvas from './DrawingCanvas';
 import styles from './custom.module.css';
 
 export default function CustomOrderPage() {
-  const [form, setForm] = useState({ name: '', email: '', phone: '', productType: '', personName: '', date: '', message: '', notes: '' });
+  const [form, setForm] = useState({ name: '', email: '', phone: '', productType: '', personName: '', date: '', message: '', notes: '', sampleImage: '', drawingImage: '' });
   const [submitted, setSubmitted] = useState(false);
+  const [isDrawingMode, setIsDrawingMode] = useState(false);
+  
+  const fileInputRef = useRef(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -15,6 +19,21 @@ export default function CustomOrderPage() {
     showToast('Custom order submitted!');
     setSubmitted(true);
   };
+
+  const handleFileUpload = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    
+    // Convert to Base64
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      setForm(prev => ({ ...prev, sampleImage: event.target.result }));
+    };
+    reader.readAsDataURL(file);
+  };
+
+  const removeDrawing = () => setForm(prev => ({ ...prev, drawingImage: '' }));
+  const removeUpload = () => setForm(prev => ({ ...prev, sampleImage: '' }));
 
   if (submitted) {
     return (
@@ -59,6 +78,50 @@ export default function CustomOrderPage() {
               <div className={styles.field}><label>Special Date</label><input value={form.date} onChange={e => setForm({...form, date: e.target.value})} placeholder="e.g., 14/02/2025" /></div>
               <div className={styles.field}><label>Message</label><textarea rows={3} value={form.message} onChange={e => setForm({...form, message: e.target.value})} placeholder="Your custom message or design idea" /></div>
               <div className={styles.field}><label>Additional Notes</label><textarea rows={3} value={form.notes} onChange={e => setForm({...form, notes: e.target.value})} placeholder="Any special requirements, size preferences, etc." /></div>
+              
+              {/* Attachments Section */}
+              <div className={styles.attachmentsSection}>
+                <h4>Design References</h4>
+                
+                {/* File Upload Dropbox */}
+                <div className={styles.dropbox} onClick={() => fileInputRef.current.click()}>
+                  <span>📁 Upload Sample Image (Optional)</span>
+                  <input type="file" ref={fileInputRef} hidden accept="image/*" onChange={handleFileUpload} />
+                </div>
+                {form.sampleImage && (
+                  <div className={styles.previewBox}>
+                    <img src={form.sampleImage} alt="Uploaded sample" />
+                    <button type="button" onClick={removeUpload} className={styles.removeBtn}>Remove</button>
+                  </div>
+                )}
+
+                <div className={styles.divider}><span>OR</span></div>
+
+                {/* Drawing Area */}
+                {!isDrawingMode && !form.drawingImage && (
+                  <button type="button" className="btn btn-secondary" style={{width: '100%'}} onClick={() => setIsDrawingMode(true)}>
+                    🖌️ Draw Your Design
+                  </button>
+                )}
+
+                {isDrawingMode && (
+                  <DrawingCanvas 
+                    onSave={(dataUrl) => {
+                      setForm(prev => ({ ...prev, drawingImage: dataUrl }));
+                      setIsDrawingMode(false);
+                    }} 
+                    onCancel={() => setIsDrawingMode(false)}
+                  />
+                )}
+
+                {form.drawingImage && !isDrawingMode && (
+                  <div className={styles.previewBox}>
+                    <img src={form.drawingImage} alt="Your Drawing" />
+                    <button type="button" onClick={removeDrawing} className={styles.removeBtn}>Remove Drawing</button>
+                    <button type="button" onClick={() => setIsDrawingMode(true)} className="btn btn-secondary" style={{marginTop: '10px'}}>Edit Drawing</button>
+                  </div>
+                )}
+              </div>
             </div>
             <button type="submit" className="btn btn-gold btn-lg" style={{width:'100%'}}>Submit Custom Order</button>
           </form>

@@ -2,10 +2,6 @@ import mongoose from 'mongoose';
 
 const MONGODB_URI = process.env.MONGODB_URI;
 
-if (!MONGODB_URI) {
-  throw new Error('Please define the MONGODB_URI environment variable in .env.local');
-}
-
 let cached = global.mongoose;
 
 if (!cached) {
@@ -13,6 +9,14 @@ if (!cached) {
 }
 
 async function dbConnect() {
+  if (!MONGODB_URI) {
+    if (process.env.NODE_ENV !== 'production') {
+       console.warn('⚠️ MONGODB_URI is not defined! Using fake mock DB connection for build phase.');
+       return { model: () => ({ find: () => [], create: () => ({}) }) };
+    }
+    throw new Error('Please define the MONGODB_URI environment variable in .env.local');
+  }
+
   if (cached.conn) {
     return cached.conn;
   }

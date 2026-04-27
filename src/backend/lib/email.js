@@ -1,6 +1,6 @@
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY || 're_dummy_for_build');
 const NOTIFICATION_EMAIL = process.env.NOTIFICATION_EMAIL || 'kshh376@gmail.com';
 
 export async function sendOrderNotification(order) {
@@ -34,12 +34,31 @@ export async function sendOrderNotification(order) {
   }
 }
 
-export async function sendCustomOrderNotification(customOrder) {
+export async function sendCustomOrderNotification(customOrder, sampleImage = null, drawingImage = null) {
   try {
+    const attachments = [];
+
+    // Helper to strip base64 prefix
+    const getBase64Data = (dataUrl) => {
+      if (!dataUrl) return null;
+      return dataUrl.split(',')[1] || dataUrl;
+    };
+
+    if (sampleImage) {
+      const content = getBase64Data(sampleImage);
+      if (content) attachments.push({ filename: 'user-sample.png', content });
+    }
+
+    if (drawingImage) {
+      const content = getBase64Data(drawingImage);
+      if (content) attachments.push({ filename: 'user-drawing.png', content });
+    }
+
     await resend.emails.send({
       from: 'Emkay Home <onboarding@resend.dev>',
       to: NOTIFICATION_EMAIL,
       subject: `✦ New Custom Order Query: ${customOrder.queryId}`,
+      attachments: attachments.length > 0 ? attachments : undefined,
       html: `
         <div style="font-family: 'Inter', sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #0E300E;">New Custom Order Query!</h2>
@@ -54,6 +73,7 @@ export async function sendCustomOrderNotification(customOrder) {
           <p><strong>Special Date:</strong> ${customOrder.date || 'Not specified'}</p>
           <p><strong>Message:</strong> ${customOrder.message || 'Not specified'}</p>
           <p><strong>Additional Notes:</strong> ${customOrder.notes || 'None'}</p>
+          ${attachments.length > 0 ? '<p><i>Attachments are included with this email.</i></p>' : ''}
         </div>
       `,
     });
