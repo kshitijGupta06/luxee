@@ -3,9 +3,14 @@ import { Resend } from 'resend';
 const resend = new Resend(process.env.RESEND_API_KEY || 're_dummy_for_build');
 const NOTIFICATION_EMAIL = process.env.NOTIFICATION_EMAIL || 'kshh376@gmail.com';
 
+// Debug: Log if keys are missing (only on server)
+if (!process.env.RESEND_API_KEY) {
+  console.warn('⚠️ Warning: RESEND_API_KEY is not defined in environment variables.');
+}
+
 export async function sendOrderNotification(order) {
   try {
-    await resend.emails.send({
+    const data = await resend.emails.send({
       from: 'Emkay Home <onboarding@resend.dev>',
       to: NOTIFICATION_EMAIL,
       subject: `🛒 New Order: ${order.orderId} — ₹${order.total}`,
@@ -29,8 +34,9 @@ export async function sendOrderNotification(order) {
         </div>
       `,
     });
+    console.log('✅ Order notification email sent successfully:', data);
   } catch (error) {
-    console.error('Failed to send order notification email:', error);
+    console.error('❌ Failed to send order notification email:', error);
   }
 }
 
@@ -54,7 +60,7 @@ export async function sendCustomOrderNotification(customOrder, sampleImage = nul
       if (content) attachments.push({ filename: 'user-drawing.png', content });
     }
 
-    await resend.emails.send({
+    const data = await resend.emails.send({
       from: 'Emkay Home <onboarding@resend.dev>',
       to: NOTIFICATION_EMAIL,
       subject: `✦ New Custom Order Query: ${customOrder.queryId}`,
@@ -77,14 +83,15 @@ export async function sendCustomOrderNotification(customOrder, sampleImage = nul
         </div>
       `,
     });
+    console.log('✅ Custom order notification email sent successfully:', data);
   } catch (error) {
-    console.error('Failed to send custom order notification email:', error);
+    console.error('❌ Failed to send custom order notification email:', error);
   }
 }
 
 export async function sendOrderConfirmationToCustomer(order) {
   try {
-    await resend.emails.send({
+    const data = await resend.emails.send({
       from: 'Emkay Home <onboarding@resend.dev>',
       to: order.shipping.email,
       subject: `Order Confirmed — ${order.orderId} | Emkay Home`,
@@ -104,7 +111,8 @@ export async function sendOrderConfirmationToCustomer(order) {
         </div>
       `,
     });
+    console.log('✅ Customer confirmation email sent successfully:', data);
   } catch (error) {
-    console.error('Failed to send order confirmation to customer:', error);
+    console.error('❌ Failed to send order confirmation to customer:', error);
   }
 }
