@@ -4,14 +4,7 @@ import CustomOrder from '@/backend/models/CustomOrder';
 import { sendCustomOrderNotification } from '@/backend/lib/email';
 
 export const dynamic = 'force-dynamic';
-
-export const config = {
-  api: {
-    bodyParser: {
-      sizeLimit: '10mb', // Update limit to handle base64 images
-    },
-  },
-};
+export const fetchCache = 'force-no-store';
 
 export async function POST(request) {
   try {
