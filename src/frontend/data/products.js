@@ -3,28 +3,28 @@ export const categories = [
     id: 'vases',
     name: 'Vases',
     description: 'Handcrafted glass vases that elevate any space',
-    image: 'https://emkayhome.in/cdn/shop/files/D012D2FC-61D9-4D51-B7FC-914C59880AFB.jpg?v=1715857144&width=750',
+    image: '/images/categories/vases.jpg',
     slug: 'vases'
   },
   {
     id: 'candle-holders',
     name: 'Candle Holders',
     description: 'Elegant candle holders for ambient lighting',
-    image: 'https://emkayhome.in/cdn/shop/files/IMG_3249.jpg?v=1715607647&width=750',
+    image: '/images/categories/candle-holders.jpg',
     slug: 'candle-holders'
   },
   {
     id: 'lamps',
     name: 'Lamps',
     description: 'Artisan lamps that illuminate with style',
-    image: 'https://emkayhome.in/cdn/shop/files/MUSHROOMMARBLELAMP1.jpg?v=1716376997&width=750',
+    image: '/images/categories/lamps.jpg',
     slug: 'lamps'
   },
   {
     id: 'drinkware',
     name: 'Drinkware',
     description: 'Premium glass drinkware for refined taste',
-    image: 'https://emkayhome.in/cdn/shop/files/IMG_2868.jpg?v=1716378789&width=750',
+    image: '/images/categories/drinkware.jpg',
     slug: 'drinkware'
   }
 ];
@@ -40,8 +40,7 @@ export const products = [
     originalPrice: null,
     description: 'A charming cactus-shaped glass vase, perfect for adding a playful touch to your decor. Each piece is hand-blown and unique.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/CUTECACTI.png?v=1716377233&width=800',
-      'https://emkayhome.in/cdn/shop/files/CUTECACTI.png?v=1716377233&width=600'
+      ...['/images/products/emerald-amber-vase.jpg', '/images/products/bud-vase.jpg']
     ],
     featured: true,
     inStock: true,
@@ -56,8 +55,7 @@ export const products = [
     originalPrice: null,
     description: 'A delicate bud vase crafted from premium glass. Ideal for single stems and small floral arrangements.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/BUDBROWNANDSMOKE.png?v=1716377074&width=800',
-      'https://emkayhome.in/cdn/shop/files/BUDBROWNANDSMOKE.png?v=1716377074&width=600'
+      ...['/images/products/bud-vase.jpg', '/images/products/emerald-amber-vase.jpg']
     ],
     featured: false,
     inStock: true,
@@ -72,8 +70,7 @@ export const products = [
     originalPrice: null,
     description: 'A stone-textured glass vase that blends rustic charm with modern elegance. A true statement piece.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/D012D2FC-61D9-4D51-B7FC-914C59880AFB.jpg?v=1715857144&width=800',
-      'https://emkayhome.in/cdn/shop/files/D012D2FC-61D9-4D51-B7FC-914C59880AFB.jpg?v=1715857144&width=600'
+      ...['/images/products/sculptural-vase.jpg', '/images/products/centerpiece-bowl.jpg']
     ],
     featured: true,
     inStock: true,
@@ -88,8 +85,7 @@ export const products = [
     originalPrice: 3499,
     description: 'A set of two elegant floret vases with a floral-inspired design. Perfect for pairing together or placing separately.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/IMG_3005.jpg?v=1715855420&width=800',
-      'https://emkayhome.in/cdn/shop/files/IMG_3005.jpg?v=1715855420&width=600'
+      ...['/images/products/emerald-amber-vase.jpg', '/images/products/bud-vase.jpg']
     ],
     featured: true,
     inStock: true,
@@ -104,8 +100,7 @@ export const products = [
     originalPrice: null,
     description: 'A deep-carved glass masterpiece inspired by oceanic depths. This premium vase is a statement piece for luxury spaces.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/image00004_1e550057-30d1-4fef-bbae-6cdeab257478.jpg?v=1751653114&width=800',
-      'https://emkayhome.in/cdn/shop/files/image00004_1e550057-30d1-4fef-bbae-6cdeab257478.jpg?v=1751653114&width=600'
+      ...['/images/products/sculptural-vase.jpg', '/images/products/emerald-amber-vase.jpg']
     ],
     featured: true,
     inStock: true,
@@ -120,8 +115,7 @@ export const products = [
     originalPrice: 3499,
     description: 'A set of two vases that tell the tale of blooming flowers. Artistic hand-painted details on premium glass.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/IMG_3005.jpg?v=1715855420&width=800',
-      'https://emkayhome.in/cdn/shop/files/IMG_3005.jpg?v=1715855420&width=600'
+      ...['/images/products/centerpiece-bowl.jpg', '/images/products/emerald-amber-vase.jpg']
     ],
     featured: false,
     inStock: true,
@@ -136,8 +130,7 @@ export const products = [
     originalPrice: 1499,
     description: 'A frosted glass vase with pebble-like texture. The matte finish adds a sophisticated, modern feel.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/FROSTYBLUEWHITEVASE.png?v=1716377333&width=800',
-      'https://emkayhome.in/cdn/shop/files/FROSTYBLUEWHITEVASE.png?v=1716377333&width=600'
+      ...['/images/products/sculptural-vase.jpg', '/images/products/bud-vase.jpg']
     ],
     featured: false,
     inStock: true,
@@ -152,8 +145,7 @@ export const products = [
     originalPrice: null,
     description: 'Petite gold-toned glass miniatures that add a touch of luxury to any shelf or tabletop.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/MINIGOLDFOILVASE.png?v=1716377583&width=800',
-      'https://emkayhome.in/cdn/shop/files/MINIGOLDFOILVASE.png?v=1716377583&width=600'
+      ...['/images/products/bud-vase.jpg', '/images/products/sculptural-vase.jpg']
     ],
     featured: true,
     inStock: true,
@@ -168,8 +160,7 @@ export const products = [
     originalPrice: 1999,
     description: 'A mesmerizing swirl-patterned glass vase that captures movement in stillness. Handcrafted perfection.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/HANDPAINTEDVASE.png?v=1716378008&width=800',
-      'https://emkayhome.in/cdn/shop/files/HANDPAINTEDVASE.png?v=1716378008&width=600'
+      ...['/images/products/centerpiece-bowl.jpg', '/images/products/emerald-amber-vase.jpg']
     ],
     featured: true,
     inStock: true,
@@ -184,8 +175,7 @@ export const products = [
     originalPrice: null,
     description: 'A velvet-finished glass vase with a rich, tactile surface. Luxury meets artisanship.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/ChatGPTImageAug13_2025_02_29_18PM.png?v=1755075549&width=800',
-      'https://emkayhome.in/cdn/shop/files/ChatGPTImageAug13_2025_02_29_18PM.png?v=1755075549&width=600'
+      ...['/images/products/emerald-amber-vase.jpg', '/images/products/sculptural-vase.jpg']
     ],
     featured: false,
     inStock: true,
@@ -200,8 +190,7 @@ export const products = [
     originalPrice: null,
     description: 'A pair of bloom-shaped glass vases with a vintage floral mouth design. Handcrafted green-toned artistry.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/GREENFLOWERMOUTHVINTAGEVASE.png?v=1716377028&width=800',
-      'https://emkayhome.in/cdn/shop/files/GREENFLOWERMOUTHVINTAGEVASE.png?v=1716377028&width=600'
+      ...['/images/products/bud-vase.jpg', '/images/products/emerald-amber-vase.jpg']
     ],
     featured: false,
     inStock: true,
@@ -216,8 +205,7 @@ export const products = [
     originalPrice: null,
     description: 'A striking black and brown striped glass vase. Bold design that commands attention in any room.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/BLACKANDBROWNVASE.png?v=1716377906&width=800',
-      'https://emkayhome.in/cdn/shop/files/BLACKANDBROWNVASE.png?v=1716377906&width=600'
+      ...['/images/products/bud-vase.jpg', '/images/products/sculptural-vase.jpg']
     ],
     featured: false,
     inStock: true,
@@ -232,8 +220,7 @@ export const products = [
     originalPrice: null,
     description: 'Warm sun-kissed green-toned glass vases that bring an earthy, natural vibe to your home.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/DIRTYGREENVASES.png?v=1716377944&width=800',
-      'https://emkayhome.in/cdn/shop/files/DIRTYGREENVASES.png?v=1716377944&width=600'
+      ...['/images/products/emerald-amber-vase.jpg', '/images/products/centerpiece-bowl.jpg']
     ],
     featured: false,
     inStock: true,
@@ -248,8 +235,7 @@ export const products = [
     originalPrice: null,
     description: 'Inspired by traditional Indian hand mudras, this vase features an artistic sculptural design on premium glass.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/hand_mudra_vase.png?v=1753610499&width=800',
-      'https://emkayhome.in/cdn/shop/files/hand_mudra_vase.png?v=1753610499&width=600'
+      ...['/images/products/sculptural-vase.jpg', '/images/products/emerald-amber-vase.jpg']
     ],
     featured: true,
     inStock: true,
@@ -264,8 +250,7 @@ export const products = [
     originalPrice: null,
     description: 'A sleek, contemporary vase with clean lines and modern proportions. Minimalist perfection.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/image00010.jpg?v=1751652906&width=800',
-      'https://emkayhome.in/cdn/shop/files/image00010.jpg?v=1751652906&width=600'
+      ...['/images/products/bud-vase.jpg', '/images/products/emerald-amber-vase.jpg']
     ],
     featured: false,
     inStock: true,
@@ -280,8 +265,7 @@ export const products = [
     originalPrice: null,
     description: 'Graceful curves define this elegant glass vase. A timeless piece that complements any interior.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/IMG_4852.jpg?v=1753540921&width=800',
-      'https://emkayhome.in/cdn/shop/files/IMG_4852.jpg?v=1753540921&width=600'
+      ...['/images/products/emerald-amber-vase.jpg', '/images/products/bud-vase.jpg']
     ],
     featured: true,
     inStock: true,
@@ -298,8 +282,7 @@ export const products = [
     originalPrice: 1499,
     description: 'A set of two vintage-inspired glass candle holders with antique charm. Perfect for romantic evenings.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/IMG_3249.jpg?v=1715607647&width=800',
-      'https://emkayhome.in/cdn/shop/files/IMG_3249.jpg?v=1715607647&width=600'
+      ...['/images/products/mercury-tealight-set.jpg', '/images/products/fluted-amber-candle-holder.jpg']
     ],
     featured: true,
     inStock: true,
@@ -314,8 +297,7 @@ export const products = [
     originalPrice: null,
     description: 'A bloom-shaped candle holder that casts enchanting aurora-like patterns when lit. A magical centerpiece.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/image00001.jpg?v=1748427775&width=800',
-      'https://emkayhome.in/cdn/shop/files/image00001.jpg?v=1748427775&width=600'
+      ...['/images/products/fluted-amber-candle-holder.jpg', '/images/products/mercury-tealight-set.jpg']
     ],
     featured: true,
     inStock: true,
@@ -330,8 +312,7 @@ export const products = [
     originalPrice: null,
     description: 'Sleek modern design meets artisan glass craftsmanship. A sophisticated addition to any contemporary space.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/IMG_9968.jpg?v=1744727224&width=800',
-      'https://emkayhome.in/cdn/shop/files/IMG_9968.jpg?v=1744727224&width=600'
+      ...['/images/products/fluted-amber-candle-holder.jpg', '/images/products/mercury-tealight-set.jpg']
     ],
     featured: false,
     inStock: true,
@@ -346,8 +327,7 @@ export const products = [
     originalPrice: 1499,
     description: 'Glass candle holders with copper accents that shimmer in candlelight. Warm elegance for your home.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/IMG_3257.jpg?v=1715604184&width=800',
-      'https://emkayhome.in/cdn/shop/files/IMG_3257.jpg?v=1715604184&width=600'
+      ...['/images/products/mercury-tealight-set.jpg', '/images/products/fluted-amber-candle-holder.jpg']
     ],
     featured: false,
     inStock: true,
@@ -362,8 +342,7 @@ export const products = [
     originalPrice: null,
     description: 'A diamond-cut glass candle holder that refracts light into dazzling patterns. Simple yet stunning.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/SJxJvT.png?v=1715675067&width=800',
-      'https://emkayhome.in/cdn/shop/files/SJxJvT.png?v=1715675067&width=600'
+      ...['/images/products/fluted-amber-candle-holder.jpg', '/images/products/mercury-tealight-set.jpg']
     ],
     featured: true,
     inStock: true,
@@ -378,8 +357,7 @@ export const products = [
     originalPrice: 1199,
     description: 'A double set of elegant glass candle holders that create a symmetrical, luxurious display.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/IMG_3105.jpg?v=1715599932&width=800',
-      'https://emkayhome.in/cdn/shop/files/IMG_3105.jpg?v=1715599932&width=600'
+      ...['/images/products/mercury-tealight-set.jpg', '/images/products/fluted-amber-candle-holder.jpg']
     ],
     featured: false,
     inStock: true,
@@ -394,8 +372,7 @@ export const products = [
     originalPrice: null,
     description: 'A delicate tea-light holder with an ethereal glow. Handcrafted from the finest glass.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/DUATLIGHT.png?v=1716379591&width=800',
-      'https://emkayhome.in/cdn/shop/files/DUATLIGHT.png?v=1716379591&width=600'
+      ...['/images/products/mercury-tealight-set.jpg', '/images/products/fluted-amber-candle-holder.jpg']
     ],
     featured: false,
     inStock: true,
@@ -410,8 +387,7 @@ export const products = [
     originalPrice: 1699,
     description: 'Glass candle holders adorned with real gold flakes suspended within. Pure luxury in every detail.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/GOLDFLAKE.jpg?v=1716377419&width=800',
-      'https://emkayhome.in/cdn/shop/files/GOLDFLAKE.jpg?v=1716377419&width=600'
+      ...['/images/products/fluted-amber-candle-holder.jpg', '/images/products/mercury-tealight-set.jpg']
     ],
     featured: true,
     inStock: true,
@@ -426,8 +402,7 @@ export const products = [
     originalPrice: null,
     description: 'A rose-inspired glass candle holder with radiant, warm glow. Perfect for special moments.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/IMG_2920.jpg?v=1716203379&width=800',
-      'https://emkayhome.in/cdn/shop/files/IMG_2920.jpg?v=1716203379&width=600'
+      ...['/images/products/fluted-amber-candle-holder.jpg', '/images/products/mercury-tealight-set.jpg']
     ],
     featured: false,
     inStock: true,
@@ -442,8 +417,7 @@ export const products = [
     originalPrice: null,
     description: 'A heart-shaped glass candle holder that pulses with warm candlelight. A perfect gift for loved ones.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/IMG_2960.jpg?v=1715605792&width=800',
-      'https://emkayhome.in/cdn/shop/files/IMG_2960.jpg?v=1715605792&width=600'
+      ...['/images/products/mercury-tealight-set.jpg', '/images/products/fluted-amber-candle-holder.jpg']
     ],
     featured: false,
     inStock: true,
@@ -458,8 +432,7 @@ export const products = [
     originalPrice: 2999,
     description: 'A pair of ribbed glass pieces that double as vases and candle holders. Versatile luxury for your home.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/Ribbedvasesetup.jpg?v=1715858549&width=800',
-      'https://emkayhome.in/cdn/shop/files/Ribbedvasesetup.jpg?v=1715858549&width=600'
+      ...['/images/products/fluted-amber-candle-holder.jpg', '/images/products/mercury-tealight-set.jpg']
     ],
     featured: false,
     inStock: true,
@@ -474,8 +447,7 @@ export const products = [
     originalPrice: null,
     description: 'A vintage-style glass candle holder with old-world charm. Timeless elegance for any occasion.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/901d1ce9c78b4a48afe818bec4bd9b4d.png?v=1715682838&width=800',
-      'https://emkayhome.in/cdn/shop/files/901d1ce9c78b4a48afe818bec4bd9b4d.png?v=1715682838&width=600'
+      ...['/images/products/mercury-tealight-set.jpg', '/images/products/fluted-amber-candle-holder.jpg']
     ],
     featured: false,
     inStock: true,
@@ -490,8 +462,7 @@ export const products = [
     originalPrice: null,
     description: 'A playfully wobbly glass candle holder that adds personality and warmth to any room.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/RedTubecandleholder3.png?v=1715683222&width=800',
-      'https://emkayhome.in/cdn/shop/files/RedTubecandleholder3.png?v=1715683222&width=600'
+      ...['/images/products/fluted-amber-candle-holder.jpg', '/images/products/mercury-tealight-set.jpg']
     ],
     featured: false,
     inStock: true,
@@ -506,8 +477,7 @@ export const products = [
     originalPrice: null,
     description: 'A shimmering glass candle holder that creates magical light effects. Pure luxury and sophistication.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/image00004_07f4aa96-2933-4800-a80f-8c038dab0da2.jpg?v=1734007866&width=800',
-      'https://emkayhome.in/cdn/shop/files/image00004_07f4aa96-2933-4800-a80f-8c038dab0da2.jpg?v=1734007866&width=600'
+      ...['/images/products/mercury-tealight-set.jpg', '/images/products/fluted-amber-candle-holder.jpg']
     ],
     featured: true,
     inStock: true,
@@ -522,8 +492,7 @@ export const products = [
     originalPrice: null,
     description: 'A jewel-toned glass candle holder with gemstone-like reflections. Each piece is a work of art.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/image00002_9f7e625a-1f76-4e69-b948-d7b94069a130.jpg?v=1734007576&width=800',
-      'https://emkayhome.in/cdn/shop/files/image00002_9f7e625a-1f76-4e69-b948-d7b94069a130.jpg?v=1734007576&width=600'
+      ...['/images/products/fluted-amber-candle-holder.jpg', '/images/products/mercury-tealight-set.jpg']
     ],
     featured: false,
     inStock: true,
@@ -538,8 +507,7 @@ export const products = [
     originalPrice: null,
     description: 'A candle holder designed to create an eternal, warm glow. Handcrafted with love and precision.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/IMG_2999.jpg?v=1753363559&width=800',
-      'https://emkayhome.in/cdn/shop/files/IMG_2999.jpg?v=1753363559&width=600'
+      ...['/images/products/fluted-amber-candle-holder.jpg', '/images/products/mercury-tealight-set.jpg']
     ],
     featured: false,
     inStock: true,
@@ -554,8 +522,7 @@ export const products = [
     originalPrice: null,
     description: 'A candle holder that captures the magic of moonlight. Creates serene, calming ambiance.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/IMG_8158.jpg?v=1753363252&width=800',
-      'https://emkayhome.in/cdn/shop/files/IMG_8158.jpg?v=1753363252&width=600'
+      ...['/images/products/mercury-tealight-set.jpg', '/images/products/fluted-amber-candle-holder.jpg']
     ],
     featured: false,
     inStock: true,
@@ -572,8 +539,7 @@ export const products = [
     originalPrice: null,
     description: 'A whimsical mini mushroom-shaped glass lamp that casts a warm, ambient glow. Perfect for bedside tables.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/image00001_8034ea8f-f1e4-445e-985f-8eb0703cd7ef.jpg?v=1734006394&width=800',
-      'https://emkayhome.in/cdn/shop/files/image00001_8034ea8f-f1e4-445e-985f-8eb0703cd7ef.jpg?v=1734006394&width=600'
+      ...['/images/products/mushroom-marble-lamp.jpg', '/images/products/fluted-amber-candle-holder.jpg']
     ],
     featured: true,
     inStock: true,
@@ -588,8 +554,7 @@ export const products = [
     originalPrice: null,
     description: 'A statement mushroom lamp with a generous marble glass shade. Creates enchanting light patterns in any room.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/MUSHROOMMARBLELAMP1.jpg?v=1716376997&width=800',
-      'https://emkayhome.in/cdn/shop/files/MUSHROOMMARBLELAMP1.jpg?v=1716376997&width=600'
+      ...['/images/products/mushroom-marble-lamp.jpg', '/images/products/fluted-amber-candle-holder.jpg']
     ],
     featured: true,
     inStock: true,
@@ -604,8 +569,7 @@ export const products = [
     originalPrice: null,
     description: 'A fun robot-shaped glass lamp that combines industrial design with artisan glasswork. Great for modern spaces.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/MUSHROOMMARBLELAMP1.jpg?v=1716376997&width=800',
-      'https://emkayhome.in/cdn/shop/files/MUSHROOMMARBLELAMP1.jpg?v=1716376997&width=600'
+      ...['/images/products/mushroom-marble-lamp.jpg', '/images/products/fluted-amber-candle-holder.jpg']
     ],
     featured: true,
     inStock: true,
@@ -622,8 +586,7 @@ export const products = [
     originalPrice: null,
     description: 'Oversized glass for those special celebrations. Hand-blown with a distinctive, playful character.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/IMG_2868.jpg?v=1716378789&width=800',
-      'https://emkayhome.in/cdn/shop/files/IMG_2868.jpg?v=1716378789&width=600'
+      ...['/images/products/gold-rim-tumbler.jpg', '/images/products/ribbed-wine-goblets.jpg']
     ],
     featured: true,
     inStock: true,
@@ -638,8 +601,7 @@ export const products = [
     originalPrice: null,
     description: 'Palm leaf-etched glasses that bring tropical paradise to your table. Premium glass with exquisite detail.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/IMG_2868.jpg?v=1716378789&width=800',
-      'https://emkayhome.in/cdn/shop/files/IMG_2868.jpg?v=1716378789&width=600'
+      ...['/images/products/ribbed-wine-goblets.jpg', '/images/products/gold-rim-tumbler.jpg']
     ],
     featured: false,
     inStock: true,
@@ -654,8 +616,7 @@ export const products = [
     originalPrice: null,
     description: 'An elegant glass carafe with artistic proportions. Pour in style with this handcrafted masterpiece.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/AMBERDRINKINGGLASS.png?v=1716377802&width=800',
-      'https://emkayhome.in/cdn/shop/files/AMBERDRINKINGGLASS.png?v=1716377802&width=600'
+      ...['/images/products/gold-rim-tumbler.jpg', '/images/products/ribbed-wine-goblets.jpg']
     ],
     featured: true,
     inStock: true,
@@ -670,8 +631,7 @@ export const products = [
     originalPrice: null,
     description: 'A set of six timeless hourglass-shaped glasses. Perfect for cocktails, water, or any beverage served with style.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/GREENWINEGLASS.jpg?v=1716377187&width=800',
-      'https://emkayhome.in/cdn/shop/files/GREENWINEGLASS.jpg?v=1716377187&width=600'
+      ...['/images/products/gold-rim-tumbler.jpg', '/images/products/ribbed-wine-goblets.jpg']
     ],
     featured: false,
     inStock: true,
@@ -686,8 +646,7 @@ export const products = [
     originalPrice: null,
     description: 'A gorgeous pastel pink swirl stem glass. Elegant and unique, perfect for special occasions.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/SWIRLPINKSTEMGLASS.png?v=1716377738&width=800',
-      'https://emkayhome.in/cdn/shop/files/SWIRLPINKSTEMGLASS.png?v=1716377738&width=600'
+      ...['/images/products/ribbed-wine-goblets.jpg', '/images/products/gold-rim-tumbler.jpg']
     ],
     featured: false,
     inStock: true,
@@ -702,8 +661,7 @@ export const products = [
     originalPrice: null,
     description: 'Heart-themed drinking glasses that make every sip sweeter. Perfect for couple gifting.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/IMG_7627.jpg?v=1748426054&width=800',
-      'https://emkayhome.in/cdn/shop/files/IMG_7627.jpg?v=1748426054&width=600'
+      ...['/images/products/ribbed-wine-goblets.jpg', '/images/products/gold-rim-tumbler.jpg']
     ],
     featured: false,
     inStock: true,
@@ -718,8 +676,7 @@ export const products = [
     originalPrice: null,
     description: 'A set of four artisan glass snack servers. Elevate your entertaining with these premium serving pieces.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/image00005_6bc749c7-5fba-4548-8468-e9210cee4489.jpg?v=1734007981&width=800',
-      'https://emkayhome.in/cdn/shop/files/image00005_6bc749c7-5fba-4548-8468-e9210cee4489.jpg?v=1734007981&width=600'
+      ...['/images/products/gold-rim-tumbler.jpg', '/images/products/ribbed-wine-goblets.jpg']
     ],
     featured: true,
     inStock: true,
@@ -736,8 +693,7 @@ export const products = [
     originalPrice: 1899,
     description: 'A statement glass fruit bowl that demands attention with its unique design. Modern art meets functional decor.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/FRUITBOWL.png?v=1716376777&width=800',
-      'https://emkayhome.in/cdn/shop/files/FRUITBOWL.png?v=1716376777&width=600'
+      ...['/images/products/sculptural-vase.jpg', '/images/products/emerald-amber-vase.jpg']
     ],
     featured: false,
     inStock: true,
@@ -752,8 +708,7 @@ export const products = [
     originalPrice: 2999,
     description: 'A cheeky, round lustre glass vase with a playful personality. Fun meets luxury in this conversation-starter.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/AMIFATLUSTRE.jpg?v=1716376831&width=800',
-      'https://emkayhome.in/cdn/shop/files/AMIFATLUSTRE.jpg?v=1716376831&width=600'
+      ...['/images/products/emerald-amber-vase.jpg', '/images/products/centerpiece-bowl.jpg']
     ],
     featured: false,
     inStock: true,
@@ -768,8 +723,7 @@ export const products = [
     originalPrice: null,
     description: 'A brilliant glass bull sculpture that symbolizes strength and prosperity. A premium collector piece.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/GLASSBULLS.png?v=1716377144&width=800',
-      'https://emkayhome.in/cdn/shop/files/GLASSBULLS.png?v=1716377144&width=600'
+      ...['/images/products/sculptural-vase.jpg', '/images/products/centerpiece-bowl.jpg']
     ],
     featured: true,
     inStock: true,
@@ -784,8 +738,7 @@ export const products = [
     originalPrice: null,
     description: 'An adorable white bunny glass figurine bathed in moonlight. Charming decor for any space.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/white_bunny.png?v=1753540334&width=800',
-      'https://emkayhome.in/cdn/shop/files/white_bunny.png?v=1753540334&width=600'
+      ...['/images/products/bud-vase.jpg', '/images/products/sculptural-vase.jpg']
     ],
     featured: false,
     inStock: true,
@@ -800,8 +753,7 @@ export const products = [
     originalPrice: null,
     description: 'An abstract glass sculpture that pushes creative boundaries. Bold, artistic, and unmistakably premium.',
     images: [
-      'https://emkayhome.in/cdn/shop/files/image00030.jpg?v=1748421031&width=800',
-      'https://emkayhome.in/cdn/shop/files/image00030.jpg?v=1748421031&width=600'
+      ...['/images/products/sculptural-vase.jpg', '/images/products/emerald-amber-vase.jpg']
     ],
     featured: false,
     inStock: true,

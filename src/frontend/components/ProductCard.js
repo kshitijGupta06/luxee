@@ -13,17 +13,25 @@ export default function ProductCard({ product }) {
     <Link href={`/product/${product.slug}`} className={styles.card}>
       <div className={styles.imageWrap}>
         <img
-          src={product.images[0]}
+          src={product.images?.[0] || '/images/products/emerald-amber-vase.jpg'}
           alt={product.name}
           className={styles.image}
           loading="lazy"
+          onError={(e) => {
+            e.currentTarget.onerror = null;
+            e.currentTarget.src = '/images/products/emerald-amber-vase.jpg';
+          }}
         />
-        {product.images[1] && (
+        {product.images?.[1] && (
           <img
             src={product.images[1]}
             alt={`${product.name} alternate view`}
             className={`${styles.image} ${styles.hoverImage}`}
             loading="lazy"
+            onError={(e) => {
+              e.currentTarget.onerror = null;
+              e.currentTarget.src = '/images/products/bud-vase.jpg';
+            }}
           />
         )}
         {hasDiscount && (

@@ -23,8 +23,8 @@
 .heroOverlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: url('https://emkayhome.in/cdn/shop/files/IMG_3048.jpg?v=1741108057&width=1200') center/cover no-repeat;
-  opacity: 0.15;
+  background: url('/images/hero/hero-banner.jpg') center/cover no-repeat;
+  opacity: 0.25;
   filter: blur(1px);
 }
 
@@ -142,9 +142,10 @@
 
 /* === SCROLL ANIMATIONS === */
 .animateIn {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  animation: fadeInUp 0.8s ease both;
 }
 
 .visible .animateIn,

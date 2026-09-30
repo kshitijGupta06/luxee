@@ -16,7 +16,7 @@ function useScrollAnimation() {
           }
         });
       },
-      { threshold: 0.1, rootMargin: '0px 0px -60px 0px' }
+      { threshold: 0.05, rootMargin: '50px 0px 50px 0px' }
     );
     const elements = ref.current?.querySelectorAll(`.${styles.animateIn}`);
     elements?.forEach(el => observer.observe(el));
@@ -82,7 +82,15 @@ export default function HomePage() {
             {categories.map((cat, i) => (
               <Link href={`/shop/${cat.slug}`} key={cat.id} className={`${styles.categoryCard} ${styles.animateIn}`} style={{animationDelay: `${i * 0.1}s`}}>
                 <div className={styles.categoryImage}>
-                  <img src={cat.image} alt={cat.name} loading="lazy" />
+                  <img
+                    src={cat.image || '/images/categories/vases.jpg'}
+                    alt={cat.name}
+                    loading="lazy"
+                    onError={(e) => {
+                      e.currentTarget.onerror = null;
+                      e.currentTarget.src = '/images/categories/vases.jpg';
+                    }}
+                  />
                 </div>
                 <div className={styles.categoryInfo}>
                   <h3>{cat.name}</h3>

@@ -54,13 +54,27 @@ export default function ProductPage({ params }) {
           {/* Images */}
           <div className={styles.images}>
             <div className={styles.mainImage}>
-              <img src={product.images[activeImage]} alt={product.name} />
+              <img
+                src={product.images?.[activeImage] || '/images/products/emerald-amber-vase.jpg'}
+                alt={product.name}
+                onError={(e) => {
+                  e.currentTarget.onerror = null;
+                  e.currentTarget.src = '/images/products/emerald-amber-vase.jpg';
+                }}
+              />
               {hasDiscount && <span className={styles.saleBadge}>Sale</span>}
             </div>
             <div className={styles.thumbs}>
-              {product.images.map((img, i) => (
+              {(product.images || ['/images/products/emerald-amber-vase.jpg']).map((img, i) => (
                 <button key={i} className={`${styles.thumb} ${i === activeImage ? styles.activeThumb : ''}`} onClick={() => setActiveImage(i)}>
-                  <img src={img} alt={`${product.name} view ${i + 1}`} />
+                  <img
+                    src={img}
+                    alt={`${product.name} view ${i + 1}`}
+                    onError={(e) => {
+                      e.currentTarget.onerror = null;
+                      e.currentTarget.src = '/images/products/emerald-amber-vase.jpg';
+                    }}
+                  />
                 </button>
               ))}
             </div>

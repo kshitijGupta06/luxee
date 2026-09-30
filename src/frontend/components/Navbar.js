@@ -46,7 +46,7 @@ export default function Navbar() {
   const isHome = pathname === '/';
 
   return (
-    <nav className={`${styles.navbar} ${styles.scrolled} ${!isHome ? styles.dark : ''}`}>
+    <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''} ${!isHome ? styles.dark : ''}`}>
       <div className={styles.inner}>
         <Link href="/" className={styles.logo}>
           <span className={styles.logoText}>Emkay</span>

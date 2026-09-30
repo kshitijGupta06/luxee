@@ -20,7 +20,10 @@ export default function AboutPage() {
               <p>Our mission is simple: to bring the beauty of artisan glass into homes across India, offering pieces that are not just functional, but truly works of art.</p>
             </div>
             <div className={styles.storyImage}>
-              <img src="https://emkayhome.in/cdn/shop/files/IMG_2954.jpg?v=1740741117&width=800" alt="Artisan glass craftsmanship" />
+              <img
+                src="/images/products/sculptural-vase.jpg"
+                alt="Artisan glass craftsmanship"
+              />
             </div>
           </div>
         </div>
