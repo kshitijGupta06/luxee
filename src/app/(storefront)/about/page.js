@@ -7,7 +7,7 @@ export default function AboutPage() {
       <section className={styles.hero}>
         <p className={styles.tag}>✦ Our Story</p>
         <h1>Emkay Home</h1>
-        <p className={styles.heroDesc}>Where artisan craftsmanship meets modern elegance. Each glass piece we create is a labour of love, designed to transform your spaces into sanctuaries of beauty.</p>
+        <p className={styles.heroDesc}>Emkay Home - A sister company of Emkay International. <br></br>Where artisan craftsmanship meets modern elegance. Each glass piece we create is a labour of love, designed to transform your spaces into sanctuaries of beauty.<br></br></p>
       </section>
 
       <section className={`section ${styles.story}`}>
@@ -54,12 +54,12 @@ export default function AboutPage() {
       </section>
 
       <section className={`section ${styles.cta}`}>
-        <div className="container" style={{textAlign:'center'}}>
+        <div className="container" style={{ textAlign: 'center' }}>
           <h2>Ready to Discover?</h2>
-          <p style={{color:'var(--color-gray-500)', maxWidth:'500px', margin:'1rem auto 2rem', fontWeight: 300}}>
+          <p style={{ color: 'var(--color-gray-500)', maxWidth: '500px', margin: '1rem auto 2rem', fontWeight: 300 }}>
             Explore our curated collection and find the perfect piece for your home or as a gift for someone special.
           </p>
-          <div style={{display:'flex', gap:'1rem', justifyContent:'center', flexWrap:'wrap'}}>
+          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link href="/shop" className="btn btn-primary btn-lg">Shop Collection</Link>
             <Link href="/custom-order" className="btn btn-gold btn-lg">Custom Order</Link>
           </div>
