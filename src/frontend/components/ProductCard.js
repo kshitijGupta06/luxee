@@ -9,29 +9,23 @@ export default function ProductCard({ product }) {
     ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
     : 0;
 
+  const hasHoverImage = Boolean(product.images?.[1] && product.images[1] !== product.images[0]);
+
   return (
-    <Link href={`/product/${product.slug}`} className={styles.card}>
+    <Link href={`/product/${product.slug}`} className={`${styles.card} ${hasHoverImage ? styles.hasHover : ''}`}>
       <div className={styles.imageWrap}>
         <img
-          src={product.images?.[0] || '/images/products/emerald-amber-vase.jpg'}
+          src={product.images?.[0] || '/images/categories/vases.jpg'}
           alt={product.name}
           className={styles.image}
           loading="lazy"
-          onError={(e) => {
-            e.currentTarget.onerror = null;
-            e.currentTarget.src = '/images/products/emerald-amber-vase.jpg';
-          }}
         />
-        {product.images?.[1] && (
+        {hasHoverImage && (
           <img
             src={product.images[1]}
             alt={`${product.name} alternate view`}
             className={`${styles.image} ${styles.hoverImage}`}
             loading="lazy"
-            onError={(e) => {
-              e.currentTarget.onerror = null;
-              e.currentTarget.src = '/images/products/bud-vase.jpg';
-            }}
           />
         )}
         {hasDiscount && (

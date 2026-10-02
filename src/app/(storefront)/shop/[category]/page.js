@@ -1,12 +1,14 @@
 'use client';
 import { use } from 'react';
+import { useParams } from 'next/navigation';
 import ProductCard from '@/frontend/components/ProductCard';
 import { getProductsByCategory, getCategoryBySlug, categories } from '@/frontend/data/products';
 import Link from 'next/link';
 import styles from '../shop.module.css';
 
 export default function CategoryPage({ params }) {
-  const { category } = use(params);
+  const routeParams = useParams();
+  const category = routeParams?.category || (typeof params?.then === 'function' ? use(params)?.category : params?.category);
   const cat = getCategoryBySlug(category);
   const prods = getProductsByCategory(category);
 

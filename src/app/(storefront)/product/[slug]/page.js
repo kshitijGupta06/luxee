@@ -1,5 +1,6 @@
 'use client';
 import { use, useState } from 'react';
+import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import { getProductBySlug, formatPrice } from '@/frontend/data/products';
 import { addToCart } from '@/frontend/lib/store';
@@ -7,7 +8,8 @@ import { showToast } from '@/frontend/components/ToastProvider';
 import styles from './product.module.css';
 
 export default function ProductPage({ params }) {
-  const { slug } = use(params);
+  const routeParams = useParams();
+  const slug = routeParams?.slug || (typeof params?.then === 'function' ? use(params)?.slug : params?.slug);
   const product = getProductBySlug(slug);
   const [activeImage, setActiveImage] = useState(0);
   const [quantity, setQuantity] = useState(1);

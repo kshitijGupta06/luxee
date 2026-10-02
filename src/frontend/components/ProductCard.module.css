@@ -54,23 +54,19 @@
 }
 
 .card:hover .image {
-  transform: scale(1.05);
+  transform: scale(1.06);
 }
 
 .hoverImage {
   opacity: 0;
 }
 
-.card:hover .hoverImage {
+.card.hasHover:hover .hoverImage {
   opacity: 1;
 }
 
-.card:hover .image:first-child {
+.card.hasHover:hover .image:first-child {
   opacity: 0;
-}
-
-.card:hover .hoverImage {
-  opacity: 1;
 }
 
 .saleBadge {

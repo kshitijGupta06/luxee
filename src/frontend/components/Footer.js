@@ -30,10 +30,11 @@ export default function Footer() {
           <div className={styles.column}>
             <h4>Shop</h4>
             <Link href="/shop">All Products</Link>
-            <Link href="/shop/vases">Vases</Link>
             <Link href="/shop/candle-holders">Candle Holders</Link>
-            <Link href="/shop/lamps">Lamps</Link>
-            <Link href="/shop/drinkware">Drinkware</Link>
+            <Link href="/shop/hampers">Hampers</Link>
+            <Link href="/shop/kitchenware">KitchenWare</Link>
+            <Link href="/shop/t-light">T-Light</Link>
+            <Link href="/shop/vases">Vases</Link>
           </div>
 
           {/* Company */}

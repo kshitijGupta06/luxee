@@ -1,763 +1,721 @@
+// ==========================================================================
+// EMKAY HOME - PRODUCT CATALOG & CATEGORIES
+// Total active products: 45 (Matching WeTransfer folder upload)
+// ==========================================================================
+
 export const categories = [
   {
-    id: 'vases',
-    name: 'Vases',
-    description: 'Handcrafted glass vases that elevate any space',
-    image: '/images/categories/vases.jpg',
-    slug: 'vases'
+    "id": "candle-holders",
+    "name": "Candle Holders",
+    "description": "Elegant candle holders for ambient lighting and soulful evenings",
+    "image": "/images/catalog/Candle Holders/IMG_0234.jpg",
+    "slug": "candle-holders"
   },
   {
-    id: 'candle-holders',
-    name: 'Candle Holders',
-    description: 'Elegant candle holders for ambient lighting',
-    image: '/images/categories/candle-holders.jpg',
-    slug: 'candle-holders'
+    "id": "hampers",
+    "name": "Hampers",
+    "description": "Curated luxury hampers for unforgettable gifting and celebrations",
+    "image": "/images/catalog/Hampers/27254ccb-a000-4164-8bd3-7368a3a23fa4.jpg",
+    "slug": "hampers"
   },
   {
-    id: 'lamps',
-    name: 'Lamps',
-    description: 'Artisan lamps that illuminate with style',
-    image: '/images/categories/lamps.jpg',
-    slug: 'lamps'
+    "id": "kitchenware",
+    "name": "KitchenWare",
+    "description": "Artisan glassware, serveware, and refined culinary dining essentials",
+    "image": "/images/catalog/KitchenWare/AMBER DRINKING GLASS.png",
+    "slug": "kitchenware"
   },
   {
-    id: 'drinkware',
-    name: 'Drinkware',
-    description: 'Premium glass drinkware for refined taste',
-    image: '/images/categories/drinkware.jpg',
-    slug: 'drinkware'
+    "id": "t-light",
+    "name": "T-Light",
+    "description": "Atmospheric tea-light holders with enchanting shimmer and warmth",
+    "image": "/images/catalog/T-Light/IMG_3052.JPG",
+    "slug": "t-light"
+  },
+  {
+    "id": "vases",
+    "name": "Vases",
+    "description": "Handcrafted glass vases that elevate any space with sculptural elegance",
+    "image": "/images/catalog/Vases/87bb281b-140e-4580-bb4c-674925bddef0.jpg",
+    "slug": "vases"
   }
 ];
 
 export const products = [
-  // === VASES ===
   {
-    id: 'cute-cacti',
-    name: 'Cute Cacti',
-    slug: 'cute-cacti',
-    category: 'vases',
-    price: 899,
-    originalPrice: null,
-    description: 'A charming cactus-shaped glass vase, perfect for adding a playful touch to your decor. Each piece is hand-blown and unique.',
-    images: [
-      ...['/images/products/emerald-amber-vase.jpg', '/images/products/bud-vase.jpg']
+    "id": "candle-holders-candle-holder-design-1-0234-1",
+    "name": "Candle Holder - Design #1 (0234)",
+    "slug": "candle-holders-candle-holder-design-1-0234-1",
+    "category": "candle-holders",
+    "price": 899,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted candle holder - design #1 (0234) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Candle Holders/IMG_0234.jpg"
     ],
-    featured: true,
-    inStock: true,
-    customizable: true
+    "featured": true,
+    "inStock": true,
+    "customizable": true
   },
   {
-    id: 'bud-vase',
-    name: 'Bud Vase',
-    slug: 'bud-vase',
-    category: 'vases',
-    price: 899,
-    originalPrice: null,
-    description: 'A delicate bud vase crafted from premium glass. Ideal for single stems and small floral arrangements.',
-    images: [
-      ...['/images/products/bud-vase.jpg', '/images/products/emerald-amber-vase.jpg']
+    "id": "candle-holders-candle-holder-design-2-9968-2",
+    "name": "Candle Holder - Design #2 (9968)",
+    "slug": "candle-holders-candle-holder-design-2-9968-2",
+    "category": "candle-holders",
+    "price": 1199,
+    "originalPrice": 1699,
+    "description": "Artisanal handcrafted candle holder - design #2 (9968) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Candle Holders/IMG_9968.jpeg"
     ],
-    featured: false,
-    inStock: true,
-    customizable: true
+    "featured": false,
+    "inStock": true,
+    "customizable": false
   },
   {
-    id: 'stoned',
-    name: 'Stoned',
-    slug: 'stoned',
-    category: 'vases',
-    price: 2400,
-    originalPrice: null,
-    description: 'A stone-textured glass vase that blends rustic charm with modern elegance. A true statement piece.',
-    images: [
-      ...['/images/products/sculptural-vase.jpg', '/images/products/centerpiece-bowl.jpg']
+    "id": "candle-holders-candle-holder-design-3-9970-3",
+    "name": "Candle Holder - Design #3 (9970)",
+    "slug": "candle-holders-candle-holder-design-3-9970-3",
+    "category": "candle-holders",
+    "price": 1499,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted candle holder - design #3 (9970) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Candle Holders/IMG_9970.jpg"
     ],
-    featured: true,
-    inStock: true,
-    customizable: true
+    "featured": false,
+    "inStock": true,
+    "customizable": true
   },
   {
-    id: 'floret-vase-set-of-2',
-    name: 'Floret (Set of 2)',
-    slug: 'floret-vase-set-of-2',
-    category: 'vases',
-    price: 2999,
-    originalPrice: 3499,
-    description: 'A set of two elegant floret vases with a floral-inspired design. Perfect for pairing together or placing separately.',
-    images: [
-      ...['/images/products/emerald-amber-vase.jpg', '/images/products/bud-vase.jpg']
+    "id": "candle-holders-red-candle-holder-4",
+    "name": "Red Candle Holder",
+    "slug": "candle-holders-red-candle-holder-4",
+    "category": "candle-holders",
+    "price": 1699,
+    "originalPrice": 2199,
+    "description": "Artisanal handcrafted red candle holder created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Candle Holders/Red Candle Holder.jpg"
     ],
-    featured: true,
-    inStock: true,
-    customizable: false
+    "featured": true,
+    "inStock": true,
+    "customizable": false
   },
   {
-    id: 'abyssal-carve',
-    name: 'Abyssal Carve',
-    slug: 'abyssal-carve',
-    category: 'vases',
-    price: 6499,
-    originalPrice: null,
-    description: 'A deep-carved glass masterpiece inspired by oceanic depths. This premium vase is a statement piece for luxury spaces.',
-    images: [
-      ...['/images/products/sculptural-vase.jpg', '/images/products/emerald-amber-vase.jpg']
+    "id": "candle-holders-red-tube-candle-holder-4-5",
+    "name": "Red Tube Candle Holder 4",
+    "slug": "candle-holders-red-tube-candle-holder-4-5",
+    "category": "candle-holders",
+    "price": 1999,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted red tube candle holder 4 created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Candle Holders/Red Tube candle holder 4.png"
     ],
-    featured: true,
-    inStock: true,
-    customizable: true
+    "featured": false,
+    "inStock": true,
+    "customizable": true
   },
   {
-    id: 'blooming-tale',
-    name: 'Blooming Tale (Set of 2)',
-    slug: 'blooming-tale',
-    category: 'vases',
-    price: 2899,
-    originalPrice: 3499,
-    description: 'A set of two vases that tell the tale of blooming flowers. Artistic hand-painted details on premium glass.',
-    images: [
-      ...['/images/products/centerpiece-bowl.jpg', '/images/products/emerald-amber-vase.jpg']
+    "id": "hampers-luxury-hamper-edition-1-1",
+    "name": "Luxury Hamper - Edition 1",
+    "slug": "hampers-luxury-hamper-edition-1-1",
+    "category": "hampers",
+    "price": 2499,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted luxury hamper - edition 1 created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Hampers/27254ccb-a000-4164-8bd3-7368a3a23fa4.jpg"
     ],
-    featured: false,
-    inStock: true,
-    customizable: false
+    "featured": true,
+    "inStock": true,
+    "customizable": true
   },
   {
-    id: 'frosty-cailoux',
-    name: 'Frosty Cailoux',
-    slug: 'frosty-cailoux',
-    category: 'vases',
-    price: 999,
-    originalPrice: 1499,
-    description: 'A frosted glass vase with pebble-like texture. The matte finish adds a sophisticated, modern feel.',
-    images: [
-      ...['/images/products/sculptural-vase.jpg', '/images/products/bud-vase.jpg']
+    "id": "hampers-luxury-hamper-edition-2-2",
+    "name": "Luxury Hamper - Edition 2",
+    "slug": "hampers-luxury-hamper-edition-2-2",
+    "category": "hampers",
+    "price": 2999,
+    "originalPrice": 3499,
+    "description": "Artisanal handcrafted luxury hamper - edition 2 created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Hampers/2e517e8a-2967-402b-be3c-3268d7c5b57e.jpg"
     ],
-    featured: false,
-    inStock: true,
-    customizable: true
+    "featured": false,
+    "inStock": true,
+    "customizable": false
   },
   {
-    id: 'golden-rush-miniatures',
-    name: 'Golden Rush Miniatures',
-    slug: 'golden-rush-miniatures',
-    category: 'vases',
-    price: 499,
-    originalPrice: null,
-    description: 'Petite gold-toned glass miniatures that add a touch of luxury to any shelf or tabletop.',
-    images: [
-      ...['/images/products/bud-vase.jpg', '/images/products/sculptural-vase.jpg']
+    "id": "hampers-luxury-hamper-edition-3-3",
+    "name": "Luxury Hamper - Edition 3",
+    "slug": "hampers-luxury-hamper-edition-3-3",
+    "category": "hampers",
+    "price": 3499,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted luxury hamper - edition 3 created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Hampers/6102736d-26b6-4986-83b3-af210d16d6e7.jpg"
     ],
-    featured: true,
-    inStock: true,
-    customizable: false
+    "featured": false,
+    "inStock": true,
+    "customizable": true
   },
   {
-    id: 'swirl-vase',
-    name: 'Swirl Vase',
-    slug: 'swirl-vase',
-    category: 'vases',
-    price: 1299,
-    originalPrice: 1999,
-    description: 'A mesmerizing swirl-patterned glass vase that captures movement in stillness. Handcrafted perfection.',
-    images: [
-      ...['/images/products/centerpiece-bowl.jpg', '/images/products/emerald-amber-vase.jpg']
+    "id": "hampers-luxury-hamper-edition-4-4",
+    "name": "Luxury Hamper - Edition 4",
+    "slug": "hampers-luxury-hamper-edition-4-4",
+    "category": "hampers",
+    "price": 3999,
+    "originalPrice": 4499,
+    "description": "Artisanal handcrafted luxury hamper - edition 4 created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Hampers/94cf82c8-7d5f-410e-ab20-cf08a635ebf9.jpg"
     ],
-    featured: true,
-    inStock: true,
-    customizable: true
+    "featured": true,
+    "inStock": true,
+    "customizable": false
   },
   {
-    id: 'veloura-vase',
-    name: 'Veloura Vase',
-    slug: 'veloura-vase',
-    category: 'vases',
-    price: 1899,
-    originalPrice: null,
-    description: 'A velvet-finished glass vase with a rich, tactile surface. Luxury meets artisanship.',
-    images: [
-      ...['/images/products/emerald-amber-vase.jpg', '/images/products/sculptural-vase.jpg']
+    "id": "hampers-luxury-hamper-edition-5-5",
+    "name": "Luxury Hamper - Edition 5",
+    "slug": "hampers-luxury-hamper-edition-5-5",
+    "category": "hampers",
+    "price": 4499,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted luxury hamper - edition 5 created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Hampers/e1097453-6aa5-4bd5-a956-9f1a73472536.jpg"
     ],
-    featured: false,
-    inStock: true,
-    customizable: true
+    "featured": false,
+    "inStock": true,
+    "customizable": true
   },
   {
-    id: 'bloom-vase-set-of-2',
-    name: 'Bloom Vase (Set of 2)',
-    slug: 'bloom-vase-set-of-2',
-    category: 'vases',
-    price: 1599,
-    originalPrice: null,
-    description: 'A pair of bloom-shaped glass vases with a vintage floral mouth design. Handcrafted green-toned artistry.',
-    images: [
-      ...['/images/products/bud-vase.jpg', '/images/products/emerald-amber-vase.jpg']
+    "id": "kitchenware-amber-drinking-glass-1",
+    "name": "Amber Drinking Glass",
+    "slug": "kitchenware-amber-drinking-glass-1",
+    "category": "kitchenware",
+    "price": 999,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted amber drinking glass created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/KitchenWare/AMBER DRINKING GLASS.png"
     ],
-    featured: false,
-    inStock: true,
-    customizable: true
+    "featured": true,
+    "inStock": true,
+    "customizable": true
   },
   {
-    id: 'strip-tease',
-    name: 'Strip - Tease',
-    slug: 'strip-tease',
-    category: 'vases',
-    price: 1499,
-    originalPrice: null,
-    description: 'A striking black and brown striped glass vase. Bold design that commands attention in any room.',
-    images: [
-      ...['/images/products/bud-vase.jpg', '/images/products/sculptural-vase.jpg']
+    "id": "kitchenware-green-wine-glass-2",
+    "name": "Green Wine Glass",
+    "slug": "kitchenware-green-wine-glass-2",
+    "category": "kitchenware",
+    "price": 1299,
+    "originalPrice": 1799,
+    "description": "Artisanal handcrafted green wine glass created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/KitchenWare/GREEN WINE GLASS.jpg"
     ],
-    featured: false,
-    inStock: true,
-    customizable: false
+    "featured": false,
+    "inStock": true,
+    "customizable": false
   },
   {
-    id: 'sun-kissed',
-    name: 'Sun Kissed',
-    slug: 'sun-kissed',
-    category: 'vases',
-    price: 1299,
-    originalPrice: null,
-    description: 'Warm sun-kissed green-toned glass vases that bring an earthy, natural vibe to your home.',
-    images: [
-      ...['/images/products/emerald-amber-vase.jpg', '/images/products/centerpiece-bowl.jpg']
+    "id": "kitchenware-kitchenware-piece-design-3-5261-3",
+    "name": "KitchenWare Piece - Design #3 (5261)",
+    "slug": "kitchenware-kitchenware-piece-design-3-5261-3",
+    "category": "kitchenware",
+    "price": 1699,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted kitchenware piece - design #3 (5261) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/KitchenWare/IMG_0526 (1).jpg"
     ],
-    featured: false,
-    inStock: true,
-    customizable: true
+    "featured": false,
+    "inStock": true,
+    "customizable": true
   },
   {
-    id: 'hand-mudra-vase',
-    name: 'Hand-Mudra Vase',
-    slug: 'hand-mudra-vase',
-    category: 'vases',
-    price: 2999,
-    originalPrice: null,
-    description: 'Inspired by traditional Indian hand mudras, this vase features an artistic sculptural design on premium glass.',
-    images: [
-      ...['/images/products/sculptural-vase.jpg', '/images/products/emerald-amber-vase.jpg']
+    "id": "kitchenware-ribbed-cocktail-dessert-glass-2-4",
+    "name": "Ribbed Cocktail Dessert Glass 2",
+    "slug": "kitchenware-ribbed-cocktail-dessert-glass-2-4",
+    "category": "kitchenware",
+    "price": 1999,
+    "originalPrice": 2499,
+    "description": "Artisanal handcrafted ribbed cocktail dessert glass 2 created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/KitchenWare/RIBBED COCKTAIL DESSERT GLASS 2.jpg"
     ],
-    featured: true,
-    inStock: true,
-    customizable: true
+    "featured": true,
+    "inStock": true,
+    "customizable": false
   },
   {
-    id: 'modern-sleek',
-    name: 'Modern Sleek',
-    slug: 'modern-sleek',
-    category: 'vases',
-    price: 1799,
-    originalPrice: null,
-    description: 'A sleek, contemporary vase with clean lines and modern proportions. Minimalist perfection.',
-    images: [
-      ...['/images/products/bud-vase.jpg', '/images/products/emerald-amber-vase.jpg']
+    "id": "kitchenware-swirl-pink-stem-glass-5",
+    "name": "Swirl Pink Stem Glass",
+    "slug": "kitchenware-swirl-pink-stem-glass-5",
+    "category": "kitchenware",
+    "price": 2399,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted swirl pink stem glass created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/KitchenWare/SWIRL PINK STEM GLASS.png"
     ],
-    featured: false,
-    inStock: true,
-    customizable: true
+    "featured": false,
+    "inStock": true,
+    "customizable": true
   },
   {
-    id: 'elegant-curves',
-    name: 'Elegant Curves',
-    slug: 'elegant-curves',
-    category: 'vases',
-    price: 2199,
-    originalPrice: null,
-    description: 'Graceful curves define this elegant glass vase. A timeless piece that complements any interior.',
-    images: [
-      ...['/images/products/emerald-amber-vase.jpg', '/images/products/bud-vase.jpg']
+    "id": "t-light-t-light-holder-design-1-3052-1",
+    "name": "T-Light Holder - Design #1 (3052)",
+    "slug": "t-light-t-light-holder-design-1-3052-1",
+    "category": "t-light",
+    "price": 499,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted t-light holder - design #1 (3052) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/T-Light/IMG_3052.JPG"
     ],
-    featured: true,
-    inStock: true,
-    customizable: false
-  },
-
-  // === CANDLE HOLDERS ===
-  {
-    id: 'antique-love-set-of-2',
-    name: 'Antique Love (Set of 2)',
-    slug: 'antique-love-candle-holders-set-of-2',
-    category: 'candle-holders',
-    price: 1299,
-    originalPrice: 1499,
-    description: 'A set of two vintage-inspired glass candle holders with antique charm. Perfect for romantic evenings.',
-    images: [
-      ...['/images/products/mercury-tealight-set.jpg', '/images/products/fluted-amber-candle-holder.jpg']
-    ],
-    featured: true,
-    inStock: true,
-    customizable: false
+    "featured": true,
+    "inStock": true,
+    "customizable": true
   },
   {
-    id: 'aurora-bloom',
-    name: 'Aurora Bloom',
-    slug: 'aurora-bloom',
-    category: 'candle-holders',
-    price: 1799,
-    originalPrice: null,
-    description: 'A bloom-shaped candle holder that casts enchanting aurora-like patterns when lit. A magical centerpiece.',
-    images: [
-      ...['/images/products/fluted-amber-candle-holder.jpg', '/images/products/mercury-tealight-set.jpg']
+    "id": "t-light-t-light-holder-design-2-3057-2",
+    "name": "T-Light Holder - Design #2 (3057)",
+    "slug": "t-light-t-light-holder-design-2-3057-2",
+    "category": "t-light",
+    "price": 599,
+    "originalPrice": 1099,
+    "description": "Artisanal handcrafted t-light holder - design #2 (3057) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/T-Light/IMG_3057.JPG"
     ],
-    featured: true,
-    inStock: true,
-    customizable: true
+    "featured": false,
+    "inStock": true,
+    "customizable": false
   },
   {
-    id: 'contemporary-candle-holder',
-    name: 'Contemporary Candle Holder',
-    slug: 'contemporary-candle-holder',
-    category: 'candle-holders',
-    price: 1499,
-    originalPrice: null,
-    description: 'Sleek modern design meets artisan glass craftsmanship. A sophisticated addition to any contemporary space.',
-    images: [
-      ...['/images/products/fluted-amber-candle-holder.jpg', '/images/products/mercury-tealight-set.jpg']
+    "id": "t-light-t-light-holder-design-3-3066-3",
+    "name": "T-Light Holder - Design #3 (3066)",
+    "slug": "t-light-t-light-holder-design-3-3066-3",
+    "category": "t-light",
+    "price": 699,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted t-light holder - design #3 (3066) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/T-Light/IMG_3066.JPG"
     ],
-    featured: false,
-    inStock: true,
-    customizable: true
+    "featured": false,
+    "inStock": true,
+    "customizable": true
   },
   {
-    id: 'copper-touch-set-of-2',
-    name: 'Copper Touch (Set of 2)',
-    slug: 'copper-touch-set-of-2',
-    category: 'candle-holders',
-    price: 1299,
-    originalPrice: 1499,
-    description: 'Glass candle holders with copper accents that shimmer in candlelight. Warm elegance for your home.',
-    images: [
-      ...['/images/products/mercury-tealight-set.jpg', '/images/products/fluted-amber-candle-holder.jpg']
+    "id": "t-light-t-light-holder-design-4-3078-4",
+    "name": "T-Light Holder - Design #4 (3078)",
+    "slug": "t-light-t-light-holder-design-4-3078-4",
+    "category": "t-light",
+    "price": 899,
+    "originalPrice": 1399,
+    "description": "Artisanal handcrafted t-light holder - design #4 (3078) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/T-Light/IMG_3078.JPG"
     ],
-    featured: false,
-    inStock: true,
-    customizable: false
+    "featured": true,
+    "inStock": true,
+    "customizable": false
   },
   {
-    id: 'diamond-candle-holder',
-    name: 'Diamond',
-    slug: 'diamond-candle-holder',
-    category: 'candle-holders',
-    price: 600,
-    originalPrice: null,
-    description: 'A diamond-cut glass candle holder that refracts light into dazzling patterns. Simple yet stunning.',
-    images: [
-      ...['/images/products/fluted-amber-candle-holder.jpg', '/images/products/mercury-tealight-set.jpg']
+    "id": "t-light-t-light-holder-design-5-3126-5",
+    "name": "T-Light Holder - Design #5 (3126)",
+    "slug": "t-light-t-light-holder-design-5-3126-5",
+    "category": "t-light",
+    "price": 999,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted t-light holder - design #5 (3126) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/T-Light/IMG_3126.JPG"
     ],
-    featured: true,
-    inStock: true,
-    customizable: false
+    "featured": false,
+    "inStock": true,
+    "customizable": true
   },
   {
-    id: 'double-dose-set-of-2',
-    name: 'Double Dose (Set of 2)',
-    slug: 'double-dose-set-of-2',
-    category: 'candle-holders',
-    price: 999,
-    originalPrice: 1199,
-    description: 'A double set of elegant glass candle holders that create a symmetrical, luxurious display.',
-    images: [
-      ...['/images/products/mercury-tealight-set.jpg', '/images/products/fluted-amber-candle-holder.jpg']
+    "id": "t-light-t-light-holder-design-6-3135-6",
+    "name": "T-Light Holder - Design #6 (3135)",
+    "slug": "t-light-t-light-holder-design-6-3135-6",
+    "category": "t-light",
+    "price": 1099,
+    "originalPrice": 1599,
+    "description": "Artisanal handcrafted t-light holder - design #6 (3135) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/T-Light/IMG_3135.JPG"
     ],
-    featured: false,
-    inStock: true,
-    customizable: false
+    "featured": false,
+    "inStock": true,
+    "customizable": false
   },
   {
-    id: 'dua-tea-light',
-    name: 'Dua Tea-Light',
-    slug: 'dua-tea-light',
-    category: 'candle-holders',
-    price: 350,
-    originalPrice: null,
-    description: 'A delicate tea-light holder with an ethereal glow. Handcrafted from the finest glass.',
-    images: [
-      ...['/images/products/mercury-tealight-set.jpg', '/images/products/fluted-amber-candle-holder.jpg']
+    "id": "t-light-t-light-holder-design-7-3171-7",
+    "name": "T-Light Holder - Design #7 (3171)",
+    "slug": "t-light-t-light-holder-design-7-3171-7",
+    "category": "t-light",
+    "price": 1199,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted t-light holder - design #7 (3171) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/T-Light/IMG_3171.JPG"
     ],
-    featured: false,
-    inStock: true,
-    customizable: false
+    "featured": true,
+    "inStock": true,
+    "customizable": true
   },
   {
-    id: 'gold-flake-set-of-2',
-    name: 'Gold Flake (Set of 2)',
-    slug: 'gold-flake-set-of-2',
-    category: 'candle-holders',
-    price: 1499,
-    originalPrice: 1699,
-    description: 'Glass candle holders adorned with real gold flakes suspended within. Pure luxury in every detail.',
-    images: [
-      ...['/images/products/fluted-amber-candle-holder.jpg', '/images/products/mercury-tealight-set.jpg']
+    "id": "t-light-t-light-holder-design-8-9421-8",
+    "name": "T-Light Holder - Design #8 (9421)",
+    "slug": "t-light-t-light-holder-design-8-9421-8",
+    "category": "t-light",
+    "price": 1399,
+    "originalPrice": 1899,
+    "description": "Artisanal handcrafted t-light holder - design #8 (9421) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/T-Light/IMG_9421.jpeg"
     ],
-    featured: true,
-    inStock: true,
-    customizable: false
+    "featured": false,
+    "inStock": true,
+    "customizable": false
   },
   {
-    id: 'radiant-rose',
-    name: 'Radiant Rose',
-    slug: 'radiant-rose',
-    category: 'candle-holders',
-    price: 999,
-    originalPrice: null,
-    description: 'A rose-inspired glass candle holder with radiant, warm glow. Perfect for special moments.',
-    images: [
-      ...['/images/products/fluted-amber-candle-holder.jpg', '/images/products/mercury-tealight-set.jpg']
+    "id": "vases-glass-vase-edition-1-1",
+    "name": "Glass Vase - Edition 1",
+    "slug": "vases-glass-vase-edition-1-1",
+    "category": "vases",
+    "price": 899,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted glass vase - edition 1 created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Vases/87bb281b-140e-4580-bb4c-674925bddef0.jpg"
     ],
-    featured: false,
-    inStock: true,
-    customizable: true
+    "featured": true,
+    "inStock": true,
+    "customizable": true
   },
   {
-    id: 'heart-beat',
-    name: 'Heart Beat',
-    slug: 'heart-beat',
-    category: 'candle-holders',
-    price: 799,
-    originalPrice: null,
-    description: 'A heart-shaped glass candle holder that pulses with warm candlelight. A perfect gift for loved ones.',
-    images: [
-      ...['/images/products/mercury-tealight-set.jpg', '/images/products/fluted-amber-candle-holder.jpg']
+    "id": "vases-glass-vase-edition-2-2",
+    "name": "Glass Vase - Edition 2",
+    "slug": "vases-glass-vase-edition-2-2",
+    "category": "vases",
+    "price": 1099,
+    "originalPrice": 1599,
+    "description": "Artisanal handcrafted glass vase - edition 2 created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Vases/CC4FCAEE-19DA-428F-9964-5DD6B6BDBF22.jpg"
     ],
-    featured: false,
-    inStock: true,
-    customizable: true
+    "featured": false,
+    "inStock": true,
+    "customizable": false
   },
   {
-    id: 'ribbed-vase-set-of-2',
-    name: 'Ribbed Vase (Set of 2)',
-    slug: 'ribbed-vase-set-of-2',
-    category: 'candle-holders',
-    price: 2299,
-    originalPrice: 2999,
-    description: 'A pair of ribbed glass pieces that double as vases and candle holders. Versatile luxury for your home.',
-    images: [
-      ...['/images/products/fluted-amber-candle-holder.jpg', '/images/products/mercury-tealight-set.jpg']
+    "id": "vases-glass-vase-edition-3-3",
+    "name": "Glass Vase - Edition 3",
+    "slug": "vases-glass-vase-edition-3-3",
+    "category": "vases",
+    "price": 1299,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted glass vase - edition 3 created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Vases/D012D2FC-61D9-4D51-B7FC-914C59880AFB.jpg"
     ],
-    featured: false,
-    inStock: true,
-    customizable: false
+    "featured": false,
+    "inStock": true,
+    "customizable": true
   },
   {
-    id: 'vintage-candle-holder',
-    name: 'Vintage',
-    slug: 'vintage-candle-holder',
-    category: 'candle-holders',
-    price: 799,
-    originalPrice: null,
-    description: 'A vintage-style glass candle holder with old-world charm. Timeless elegance for any occasion.',
-    images: [
-      ...['/images/products/mercury-tealight-set.jpg', '/images/products/fluted-amber-candle-holder.jpg']
+    "id": "vases-glass-vase-design-4-0466-4",
+    "name": "Glass Vase - Design #4 (0466)",
+    "slug": "vases-glass-vase-design-4-0466-4",
+    "category": "vases",
+    "price": 1499,
+    "originalPrice": 1999,
+    "description": "Artisanal handcrafted glass vase - design #4 (0466) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Vases/IMG_0466.jpeg"
     ],
-    featured: false,
-    inStock: true,
-    customizable: true
+    "featured": true,
+    "inStock": true,
+    "customizable": false
   },
   {
-    id: 'woobly-candle-holder',
-    name: 'Woobly',
-    slug: 'woobly-candle-holder',
-    category: 'candle-holders',
-    price: 899,
-    originalPrice: null,
-    description: 'A playfully wobbly glass candle holder that adds personality and warmth to any room.',
-    images: [
-      ...['/images/products/fluted-amber-candle-holder.jpg', '/images/products/mercury-tealight-set.jpg']
+    "id": "vases-glass-vase-design-5-2948-5",
+    "name": "Glass Vase - Design #5 (2948)",
+    "slug": "vases-glass-vase-design-5-2948-5",
+    "category": "vases",
+    "price": 1699,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted glass vase - design #5 (2948) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Vases/IMG_2948.JPG"
     ],
-    featured: false,
-    inStock: true,
-    customizable: true
+    "featured": false,
+    "inStock": true,
+    "customizable": true
   },
   {
-    id: 'glimmer',
-    name: 'Glimmer',
-    slug: 'glimmer',
-    category: 'candle-holders',
-    price: 1299,
-    originalPrice: null,
-    description: 'A shimmering glass candle holder that creates magical light effects. Pure luxury and sophistication.',
-    images: [
-      ...['/images/products/mercury-tealight-set.jpg', '/images/products/fluted-amber-candle-holder.jpg']
+    "id": "vases-glass-vase-design-6-2954-6",
+    "name": "Glass Vase - Design #6 (2954)",
+    "slug": "vases-glass-vase-design-6-2954-6",
+    "category": "vases",
+    "price": 1899,
+    "originalPrice": 2399,
+    "description": "Artisanal handcrafted glass vase - design #6 (2954) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Vases/IMG_2954.JPG"
     ],
-    featured: true,
-    inStock: true,
-    customizable: false
+    "featured": false,
+    "inStock": true,
+    "customizable": false
   },
   {
-    id: 'jewel',
-    name: 'Jewel',
-    slug: 'jewel',
-    category: 'candle-holders',
-    price: 1599,
-    originalPrice: null,
-    description: 'A jewel-toned glass candle holder with gemstone-like reflections. Each piece is a work of art.',
-    images: [
-      ...['/images/products/fluted-amber-candle-holder.jpg', '/images/products/mercury-tealight-set.jpg']
+    "id": "vases-glass-vase-design-7-2955-7",
+    "name": "Glass Vase - Design #7 (2955)",
+    "slug": "vases-glass-vase-design-7-2955-7",
+    "category": "vases",
+    "price": 2199,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted glass vase - design #7 (2955) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Vases/IMG_2955.JPG"
     ],
-    featured: false,
-    inStock: true,
-    customizable: false
+    "featured": true,
+    "inStock": true,
+    "customizable": true
   },
   {
-    id: 'eternal-glow',
-    name: 'Eternal Glow',
-    slug: 'eternal-glow',
-    category: 'candle-holders',
-    price: 999,
-    originalPrice: null,
-    description: 'A candle holder designed to create an eternal, warm glow. Handcrafted with love and precision.',
-    images: [
-      ...['/images/products/fluted-amber-candle-holder.jpg', '/images/products/mercury-tealight-set.jpg']
+    "id": "vases-glass-vase-design-8-2967-8",
+    "name": "Glass Vase - Design #8 (2967)",
+    "slug": "vases-glass-vase-design-8-2967-8",
+    "category": "vases",
+    "price": 2399,
+    "originalPrice": 2899,
+    "description": "Artisanal handcrafted glass vase - design #8 (2967) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Vases/IMG_2967.JPG"
     ],
-    featured: false,
-    inStock: true,
-    customizable: true
+    "featured": false,
+    "inStock": true,
+    "customizable": false
   },
   {
-    id: 'moonlight-serenade',
-    name: 'Moonlight Serenade',
-    slug: 'moonlight-serenade',
-    category: 'candle-holders',
-    price: 1199,
-    originalPrice: null,
-    description: 'A candle holder that captures the magic of moonlight. Creates serene, calming ambiance.',
-    images: [
-      ...['/images/products/mercury-tealight-set.jpg', '/images/products/fluted-amber-candle-holder.jpg']
+    "id": "vases-glass-vase-design-9-2971-9",
+    "name": "Glass Vase - Design #9 (2971)",
+    "slug": "vases-glass-vase-design-9-2971-9",
+    "category": "vases",
+    "price": 2599,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted glass vase - design #9 (2971) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Vases/IMG_2971.JPG"
     ],
-    featured: false,
-    inStock: true,
-    customizable: true
-  },
-
-  // === LAMPS ===
-  {
-    id: 'mini-mushroom-lamp',
-    name: 'Mini Mushroom Lamp',
-    slug: 'mini-mushroom-lamp',
-    category: 'lamps',
-    price: 1999,
-    originalPrice: null,
-    description: 'A whimsical mini mushroom-shaped glass lamp that casts a warm, ambient glow. Perfect for bedside tables.',
-    images: [
-      ...['/images/products/mushroom-marble-lamp.jpg', '/images/products/fluted-amber-candle-holder.jpg']
-    ],
-    featured: true,
-    inStock: true,
-    customizable: false
+    "featured": false,
+    "inStock": true,
+    "customizable": true
   },
   {
-    id: 'big-mushroom-lamp',
-    name: 'Big Mushroom Lamp',
-    slug: 'big-mushroom-lamp',
-    category: 'lamps',
-    price: 3499,
-    originalPrice: null,
-    description: 'A statement mushroom lamp with a generous marble glass shade. Creates enchanting light patterns in any room.',
-    images: [
-      ...['/images/products/mushroom-marble-lamp.jpg', '/images/products/fluted-amber-candle-holder.jpg']
+    "id": "vases-glass-vase-design-10-2974-10",
+    "name": "Glass Vase - Design #10 (2974)",
+    "slug": "vases-glass-vase-design-10-2974-10",
+    "category": "vases",
+    "price": 2799,
+    "originalPrice": 3299,
+    "description": "Artisanal handcrafted glass vase - design #10 (2974) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Vases/IMG_2974.JPG"
     ],
-    featured: true,
-    inStock: true,
-    customizable: false
+    "featured": true,
+    "inStock": true,
+    "customizable": false
   },
   {
-    id: 'robot-lamp',
-    name: 'Robot Lamp',
-    slug: 'robot-lamp',
-    category: 'lamps',
-    price: 2499,
-    originalPrice: null,
-    description: 'A fun robot-shaped glass lamp that combines industrial design with artisan glasswork. Great for modern spaces.',
-    images: [
-      ...['/images/products/mushroom-marble-lamp.jpg', '/images/products/fluted-amber-candle-holder.jpg']
+    "id": "vases-glass-vase-design-11-2985-11",
+    "name": "Glass Vase - Design #11 (2985)",
+    "slug": "vases-glass-vase-design-11-2985-11",
+    "category": "vases",
+    "price": 2999,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted glass vase - design #11 (2985) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Vases/IMG_2985.JPG"
     ],
-    featured: true,
-    inStock: true,
-    customizable: false
-  },
-
-  // === DRINKWARE ===
-  {
-    id: 'big-night',
-    name: 'Big Night',
-    slug: 'big-night',
-    category: 'drinkware',
-    price: 1299,
-    originalPrice: null,
-    description: 'Oversized glass for those special celebrations. Hand-blown with a distinctive, playful character.',
-    images: [
-      ...['/images/products/gold-rim-tumbler.jpg', '/images/products/ribbed-wine-goblets.jpg']
-    ],
-    featured: true,
-    inStock: true,
-    customizable: true
+    "featured": false,
+    "inStock": true,
+    "customizable": true
   },
   {
-    id: 'palm-eden',
-    name: 'Palm Eden',
-    slug: 'palm-eden',
-    category: 'drinkware',
-    price: 999,
-    originalPrice: null,
-    description: 'Palm leaf-etched glasses that bring tropical paradise to your table. Premium glass with exquisite detail.',
-    images: [
-      ...['/images/products/ribbed-wine-goblets.jpg', '/images/products/gold-rim-tumbler.jpg']
+    "id": "vases-glass-vase-design-12-2991-12",
+    "name": "Glass Vase - Design #12 (2991)",
+    "slug": "vases-glass-vase-design-12-2991-12",
+    "category": "vases",
+    "price": 3199,
+    "originalPrice": 3699,
+    "description": "Artisanal handcrafted glass vase - design #12 (2991) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Vases/IMG_2991.JPG"
     ],
-    featured: false,
-    inStock: true,
-    customizable: true
+    "featured": false,
+    "inStock": true,
+    "customizable": false
   },
   {
-    id: 'pour-me',
-    name: 'Pour Me!',
-    slug: 'pour-me',
-    category: 'drinkware',
-    price: 1499,
-    originalPrice: null,
-    description: 'An elegant glass carafe with artistic proportions. Pour in style with this handcrafted masterpiece.',
-    images: [
-      ...['/images/products/gold-rim-tumbler.jpg', '/images/products/ribbed-wine-goblets.jpg']
+    "id": "vases-glass-vase-design-13-2999-13",
+    "name": "Glass Vase - Design #13 (2999)",
+    "slug": "vases-glass-vase-design-13-2999-13",
+    "category": "vases",
+    "price": 3399,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted glass vase - design #13 (2999) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Vases/IMG_2999.JPG"
     ],
-    featured: true,
-    inStock: true,
-    customizable: true
+    "featured": true,
+    "inStock": true,
+    "customizable": true
   },
   {
-    id: 'classic-hours-set-of-6',
-    name: 'Classic Hours (Set of 6)',
-    slug: 'classic-hours-set-of-6',
-    category: 'drinkware',
-    price: 2499,
-    originalPrice: null,
-    description: 'A set of six timeless hourglass-shaped glasses. Perfect for cocktails, water, or any beverage served with style.',
-    images: [
-      ...['/images/products/gold-rim-tumbler.jpg', '/images/products/ribbed-wine-goblets.jpg']
+    "id": "vases-glass-vase-design-14-3000-14",
+    "name": "Glass Vase - Design #14 (3000)",
+    "slug": "vases-glass-vase-design-14-3000-14",
+    "category": "vases",
+    "price": 3599,
+    "originalPrice": 4099,
+    "description": "Artisanal handcrafted glass vase - design #14 (3000) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Vases/IMG_3000.JPG"
     ],
-    featured: false,
-    inStock: true,
-    customizable: false
+    "featured": false,
+    "inStock": true,
+    "customizable": false
   },
   {
-    id: 'pastel-swirl',
-    name: 'Pastel Swirl',
-    slug: 'pastel-swirl',
-    category: 'drinkware',
-    price: 1999,
-    originalPrice: null,
-    description: 'A gorgeous pastel pink swirl stem glass. Elegant and unique, perfect for special occasions.',
-    images: [
-      ...['/images/products/ribbed-wine-goblets.jpg', '/images/products/gold-rim-tumbler.jpg']
+    "id": "vases-glass-vase-design-15-3013-15",
+    "name": "Glass Vase - Design #15 (3013)",
+    "slug": "vases-glass-vase-design-15-3013-15",
+    "category": "vases",
+    "price": 3799,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted glass vase - design #15 (3013) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Vases/IMG_3013.JPG"
     ],
-    featured: false,
-    inStock: true,
-    customizable: false
+    "featured": false,
+    "inStock": true,
+    "customizable": true
   },
   {
-    id: 'sweetheart-sips',
-    name: 'Sweetheart Sips',
-    slug: 'sweetheart-sips',
-    category: 'drinkware',
-    price: 1499,
-    originalPrice: null,
-    description: 'Heart-themed drinking glasses that make every sip sweeter. Perfect for couple gifting.',
-    images: [
-      ...['/images/products/ribbed-wine-goblets.jpg', '/images/products/gold-rim-tumbler.jpg']
+    "id": "vases-glass-vase-design-16-3016-16",
+    "name": "Glass Vase - Design #16 (3016)",
+    "slug": "vases-glass-vase-design-16-3016-16",
+    "category": "vases",
+    "price": 3999,
+    "originalPrice": 4499,
+    "description": "Artisanal handcrafted glass vase - design #16 (3016) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Vases/IMG_3016.JPG"
     ],
-    featured: false,
-    inStock: true,
-    customizable: true
+    "featured": true,
+    "inStock": true,
+    "customizable": false
   },
   {
-    id: 'snack-server-set-of-4',
-    name: 'Snack Server (Set of 4)',
-    slug: 'snack-server-set-of-4',
-    category: 'drinkware',
-    price: 2999,
-    originalPrice: null,
-    description: 'A set of four artisan glass snack servers. Elevate your entertaining with these premium serving pieces.',
-    images: [
-      ...['/images/products/gold-rim-tumbler.jpg', '/images/products/ribbed-wine-goblets.jpg']
+    "id": "vases-glass-vase-design-17-3026-17",
+    "name": "Glass Vase - Design #17 (3026)",
+    "slug": "vases-glass-vase-design-17-3026-17",
+    "category": "vases",
+    "price": 4199,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted glass vase - design #17 (3026) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Vases/IMG_3026.JPG"
     ],
-    featured: true,
-    inStock: true,
-    customizable: false
-  },
-
-  // === DECOR ===
-  {
-    id: 'all-eyes-on-me',
-    name: 'All Eyes on Me!',
-    slug: 'all-eyes-on-me',
-    category: 'vases',
-    price: 1699,
-    originalPrice: 1899,
-    description: 'A statement glass fruit bowl that demands attention with its unique design. Modern art meets functional decor.',
-    images: [
-      ...['/images/products/sculptural-vase.jpg', '/images/products/emerald-amber-vase.jpg']
-    ],
-    featured: false,
-    inStock: true,
-    customizable: false
+    "featured": false,
+    "inStock": true,
+    "customizable": true
   },
   {
-    id: 'am-i-fat',
-    name: 'AM I FAT?',
-    slug: 'am-i-fat',
-    category: 'vases',
-    price: 1999,
-    originalPrice: 2999,
-    description: 'A cheeky, round lustre glass vase with a playful personality. Fun meets luxury in this conversation-starter.',
-    images: [
-      ...['/images/products/emerald-amber-vase.jpg', '/images/products/centerpiece-bowl.jpg']
+    "id": "vases-glass-vase-design-18-3030-18",
+    "name": "Glass Vase - Design #18 (3030)",
+    "slug": "vases-glass-vase-design-18-3030-18",
+    "category": "vases",
+    "price": 4499,
+    "originalPrice": 4999,
+    "description": "Artisanal handcrafted glass vase - design #18 (3030) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Vases/IMG_3030.JPG"
     ],
-    featured: false,
-    inStock: true,
-    customizable: false
+    "featured": false,
+    "inStock": true,
+    "customizable": false
   },
   {
-    id: 'bull-brilliance',
-    name: 'Bull Brilliance',
-    slug: 'bull-brilliance',
-    category: 'vases',
-    price: 3499,
-    originalPrice: null,
-    description: 'A brilliant glass bull sculpture that symbolizes strength and prosperity. A premium collector piece.',
-    images: [
-      ...['/images/products/sculptural-vase.jpg', '/images/products/centerpiece-bowl.jpg']
+    "id": "vases-glass-vase-design-19-3035-19",
+    "name": "Glass Vase - Design #19 (3035)",
+    "slug": "vases-glass-vase-design-19-3035-19",
+    "category": "vases",
+    "price": 4699,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted glass vase - design #19 (3035) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Vases/IMG_3035.JPG"
     ],
-    featured: true,
-    inStock: true,
-    customizable: false
+    "featured": true,
+    "inStock": true,
+    "customizable": true
   },
   {
-    id: 'moon-bunny',
-    name: 'Moon Bunny',
-    slug: 'moon-bunny',
-    category: 'vases',
-    price: 1299,
-    originalPrice: null,
-    description: 'An adorable white bunny glass figurine bathed in moonlight. Charming decor for any space.',
-    images: [
-      ...['/images/products/bud-vase.jpg', '/images/products/sculptural-vase.jpg']
+    "id": "vases-glass-vase-design-20-9684-20",
+    "name": "Glass Vase - Design #20 (9684)",
+    "slug": "vases-glass-vase-design-20-9684-20",
+    "category": "vases",
+    "price": 4899,
+    "originalPrice": 5399,
+    "description": "Artisanal handcrafted glass vase - design #20 (9684) created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Vases/IMG_9684.JPG"
     ],
-    featured: false,
-    inStock: true,
-    customizable: false
+    "featured": false,
+    "inStock": true,
+    "customizable": false
   },
   {
-    id: 'modern-abstract',
-    name: 'Modern Abstract',
-    slug: 'modern-abstract',
-    category: 'vases',
-    price: 2499,
-    originalPrice: null,
-    description: 'An abstract glass sculpture that pushes creative boundaries. Bold, artistic, and unmistakably premium.',
-    images: [
-      ...['/images/products/sculptural-vase.jpg', '/images/products/emerald-amber-vase.jpg']
+    "id": "vases-ribbed-vase-21",
+    "name": "Ribbed Vase",
+    "slug": "vases-ribbed-vase-21",
+    "category": "vases",
+    "price": 5099,
+    "originalPrice": null,
+    "description": "Artisanal handcrafted ribbed vase created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Vases/Ribbed Vase.jpg"
     ],
-    featured: false,
-    inStock: true,
-    customizable: false
+    "featured": false,
+    "inStock": true,
+    "customizable": true
+  },
+  {
+    "id": "vases-ribbed-vase-set-up-22",
+    "name": "Ribbed Vase Set Up",
+    "slug": "vases-ribbed-vase-set-up-22",
+    "category": "vases",
+    "price": 5299,
+    "originalPrice": 5799,
+    "description": "Artisanal handcrafted ribbed vase set up created with premium crystal-clear glass, sculpted proportions, and contemporary luxury design. Ideal for sophisticated interior decor and bespoke gifting.",
+    "images": [
+      "/images/catalog/Vases/Ribbed vase set up.jpg"
+    ],
+    "featured": true,
+    "inStock": true,
+    "customizable": false
   }
 ];
 
@@ -768,31 +726,31 @@ export const testimonials = [
     location: 'Mumbai',
     rating: 5,
     text: 'Absolutely stunning vases! The quality of glass and craftsmanship is unmatched. My living room looks so much more elegant now.',
-    product: 'Abyssal Carve'
+    product: 'Vases Collection'
   },
   {
     id: 2,
     name: 'Rahul Mehra',
     location: 'Delhi',
     rating: 5,
-    text: 'Ordered the Gold Flake candle holders as a gift. The packaging was premium and the product exceeded expectations. Will order again!',
-    product: 'Gold Flake (Set of 2)'
+    text: 'Ordered the Candle Holders as a gift. The packaging was premium and the product exceeded expectations. Will order again!',
+    product: 'Candle Holders Collection'
   },
   {
     id: 3,
     name: 'Anita Desai',
     location: 'Bangalore',
     rating: 5,
-    text: 'The customization option is amazing! Got a personalized message engraved on the vase for my anniversary. My wife loved it!',
-    product: 'Hand-Mudra Vase'
+    text: 'The customization option is amazing! Got a personalized message engraved for my anniversary. My family loved it!',
+    product: 'Custom Luxury Hamper'
   },
   {
     id: 4,
     name: 'Vikram Singh',
     location: 'Jaipur',
     rating: 5,
-    text: 'The mushroom lamp is a conversation starter! Beautiful design and the warm light it creates is magical. Premium quality throughout.',
-    product: 'Big Mushroom Lamp'
+    text: 'The T-Light holder creates a magical atmosphere. Warm, shimmering light and top notch artisanship.',
+    product: 'T-Light Collection'
   }
 ];
 
