@@ -61,7 +61,7 @@ export default function Footer() {
             <a href="https://www.instagram.com/emkayhome/" target="_blank" rel="noopener noreferrer">@emkayhome</a>
             <div className={styles.payment}>
               <p className={styles.paymentLabel}>UPI Payment</p>
-              <p className={styles.upi}>7668467448@ybl</p>
+              <p className={styles.upi}>1234567890@ybl</p>
             </div>
           </div>
         </div>
